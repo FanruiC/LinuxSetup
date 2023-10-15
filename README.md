@@ -39,7 +39,14 @@ Use the following to update:
 git submodule init
 git submodule update
 ```
-
+Install the following:
+```
+sudo apt-get update
+sudo apt install build-essential  #provides gcc
+sudo apt install gfortran         #provides gfortran
+sudo apt install libopenmpi-dev   #provides openmpi
+```
+> This is an auto way to install openmpi, need to configure compiling flags for eg. slatec etc.
 ### paraview
 ### code
 
