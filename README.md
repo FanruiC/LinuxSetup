@@ -33,6 +33,13 @@ plugins = (command-not-found colored-man-page)
 ### anaconda
 ### gmsh
 ### nek5000
+Use "git clone --recursive" to contain "example folder". If fogot:
+Use the following to update:
+```
+git submodule init
+git submodule update
+```
+
 ### paraview
 ### code
 
