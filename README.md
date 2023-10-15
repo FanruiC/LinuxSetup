@@ -21,7 +21,7 @@ Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
-### 系统保留空间太大
+### - 系统保留空间太大
 Checking disk usage by:
 ```
 df -hl
