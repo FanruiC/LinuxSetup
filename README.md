@@ -12,7 +12,7 @@ sudo apt install fcitix
 sudo apt install fcitix-googlepinyin
 Applications > Input Method > activate fcitix
 reboot
-fcitix configtools (checking googlepinyin)
+fcitix configtools (checking googlepinyin, do miscellaneous settings)
 ```
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
