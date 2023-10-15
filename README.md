@@ -22,13 +22,19 @@ Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com
 set completion-ignore-case on
 ```
 > Add the above to .inputrc in BASH SHELL ONLY, omz has already included this function
+### Update .zshrc from cloud
 
-## Sofeware Settings
+## Software Settings
 ### omz pluggins
 ```
 plugins = (command-not-found colored-man-page)
 ```
 > In .zshrc
+### anaconda
+### gmsh
+### nek5000
+### paraview
+### code
 
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
