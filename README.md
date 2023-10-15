@@ -17,6 +17,23 @@ fcitix configtools (checking googlepinyin, do miscellaneous settings)
 ### Duo Display
 Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu)
 > It is good to use Synaptics APT Repository to do the installation
+### SSH
+```
+mkdir ~/.ssh
+vim config
+```
+输入：
+```
+Host xxx
+  HostName
+  Port
+  User
+```
+Auto login:
+```
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub [hostname]
+```
 ### Inputrc
 ```
 set completion-ignore-case on
@@ -63,3 +80,6 @@ run
 sudo tune2fs -m 0 /dev/device
 ```
 用于设置系统空间为0%而不是默认的5%
+### Chrome 页面按住拖动bug
+> 暂未找解决办法
+
