@@ -17,6 +17,17 @@ fcitix configtools (checking googlepinyin, do miscellaneous settings)
 ### Duo Display
 Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu)
 > It is good to use Synaptics APT Repository to do the installation
+### 
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
+### 系统保留空间太大
+Checking disk usage by:
+```
+df -h
+```
+run
+```
+sudo tune2fs -m 1 /dev/device
+```
+用于设置系统空间为1%而不是默认的5%
