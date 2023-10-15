@@ -24,10 +24,10 @@ Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/pro
 ### 系统保留空间太大
 Checking disk usage by:
 ```
-df -h
+df -hl
 ```
 run
 ```
-sudo tune2fs -m 1 /dev/device
+sudo tune2fs -m 0 /dev/device
 ```
-用于设置系统空间为1%而不是默认的5%
+用于设置系统空间为0%而不是默认的5%
