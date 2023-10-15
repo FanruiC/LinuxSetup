@@ -21,7 +21,7 @@ Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com
 ```
 set completion-ignore-case on
 ```
-> add the above to .inputrc in BASH SHELL ONLY, omz has already included this function
+> Add the above to .inputrc in BASH SHELL ONLY, omz has already included this function
 
 ## Sofeware Settings
 ### omz pluggins
