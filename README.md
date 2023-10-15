@@ -1,11 +1,11 @@
 # LinuxSetup
-## Time
+## Compulsory Settings
+### Time
 > Windows sees BIOS time (REAL-TIME-CLOCK RTC) as local time, Linux sees BIOS time as UTC.
 ```
 sudo timedatectl set-local-rtc 1
 ```
-
-## Input Method
+### Input Method
 > FCITX (Flexible Input Method Framework for Chinese and Various Languages) is an open-source input method framework primarily used in Linux-based operating systems.
 ```
 sudo apt install fcitix
@@ -14,6 +14,9 @@ Applications > Input Method > activate fcitix
 reboot
 fcitix configtools (checking googlepinyin, do miscellaneous settings)
 ```
+### Duo Display
+Install [DisplayLink USB Graphics Software for Ubuntu](https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu)
+> It is good to use Synaptics APT Repository to do the installation
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
