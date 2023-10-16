@@ -76,7 +76,7 @@ sudo apt install gfortran         #provides gfortran
 sudo apt install libopenmpi-dev   #provides openmpi
 ```
 > This is an auto way to install openmpi, need to configure compiling flags for eg. slatec etc.
-#### libslatec
+#### libslatec & liblapack
 Download and install slatec and lapack from [NETLIB](netlib.org)
 > lapack is needed for slatec
 > lapack3 is the package name that ubuntu installed by default.
@@ -90,6 +90,12 @@ Run the following to check where lapack locates:
 ```
 dpkg -L liblapack3
 ```
+Can be installed manually by:
+```
+cp make.inc.example make.inc
+make
+```
+
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
 > When building: p-core 4.6Ghz, e-core 3.6Ghz. Took 5-10 mins. Fan is NOT running loudly. Avg temps 80-85C. Max P-core temp 97C with 5.6Ghz.
@@ -115,3 +121,6 @@ X11 has only a global scale setting for monitors. Wayland can fix this as mentio
 ```
 sudo apt install plasma-workspace-wayland
 ```
+### Dolphin is NOT loading .bashrc or .zshrc well
+A temporary solution [this post](https://unix.stackexchange.com/questions/720191/kde-dolphin-terminal-is-not-loading-bashrc-or-profile)
+> This is a dolphin bug, setting dolphin fix startup location is a workaround.
