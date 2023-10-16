@@ -1,4 +1,4 @@
-# LinuxSetup
+# LinuxSetup for MSI
 From Bilibili: [8分钟让你快速掌握Markdown](https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=87f333e21626c3c3bbbb43b6711d2d81)
 ## Compulsory Settings
 ### Time
@@ -100,6 +100,17 @@ When compiling slatec, add to FFLAGS
 -std=legacy
 ```
 > std=legacy implies -fallow-argument-mismatch. See [GCC GNU POST](https://gcc.gnu.org/onlinedocs/gfortran/Fortran-Dialect-Options.html)
+#### Benchmark
+simple curved pipe 500 steps time:
+1. 4 p-cores
+```
+total elapsed time             :   6.87770E+01 sec
+total solver time w/o IO       :   6.75993E+01 sec
+time/timestep                  :   1.35199E-01 sec
+avg throughput per timestep    :   4.83097E+05 gridpts/CPUs
+total max memory usage         :   7.62421E-01 GB
+```
+2. 8 p-cores
 
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
