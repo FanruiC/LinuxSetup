@@ -49,6 +49,10 @@ plugins = (command-not-found colored-man-page)
 ```
 > In .zshrc
 ### anaconda
+Dowloading installation shell script from [Anaconda Download](https://www.anaconda.com/download) Run to install:
+After initialisation, run:
+```conda config --set auto_activate_base false
+```
 ### gmsh
 ### nek5000
 Use "git clone --recursive" to contain "example folder". If fogot:
