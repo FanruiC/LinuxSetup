@@ -118,6 +118,13 @@ time/timestep                  :   8.04022E-02 sec
 avg throughput per timestep    :   4.06171E+05 gridpts/CPUs
 total max memory usage         :   1.06496E+00 GB
 ```
+```
+total elapsed time             :   4.00763E+01 sec
+total solver time w/o IO       :   3.90742E+01 sec
+time/timestep                  :   7.81484E-02 sec
+avg throughput per timestep    :   4.17885E+05 gridpts/CPUs
+total max memory usage         :   1.06494E+00 GB
+```
 - 8 p-cores with 16 e-cores
 ```
 total elapsed time             :   5.79000E+01 sec
@@ -170,3 +177,10 @@ sudo apt install plasma-workspace-wayland
 ### Dolphin is NOT loading .bashrc or .zshrc well
 A temporary solution [this post](https://unix.stackexchange.com/questions/720191/kde-dolphin-terminal-is-not-loading-bashrc-or-profile)
 > This is a dolphin bug, setting dolphin fix startup location is a workaround.
+### P-cores & E-cores are NOT performing well on NEK5000
+Even by setting the followings, Nek is unstable on running over 26 or more cores. Need to find a way to stable run on 32 threads for test!
+```
+mpiexec --oversubscribe
+or
+mpiexec --use-hwthread-cpus
+```
