@@ -60,6 +60,7 @@ conda activate
 anaconda-navigator
 ```
 ### gmsh
+Download the latest stable binary from gmsh web.
 ### nek5000
 Use "git clone --recursive" to contain "example folder". If fogot:
 Use the following to update:
