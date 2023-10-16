@@ -196,7 +196,7 @@ mpiexec --use-hwthread-cpus
 ### Warning shown when running OPENMPI
 >hwloc/linux: Ignoring PCI device with non-16bit domain. Pass --enable-32bits-pci-domain to configure to support such devices (warning: it would break the library ABI, don't enable unless really needed).
 
-Tried: uninstall openmpi and build from [openmpi source](https://www.open-mpi.org/faq/?category=building#easy-build)
+Tried: uninstall openmpi and build from [openmpi source](https://www.open-mpi.org/faq/?category=building#easy-build).
 Warnings disappears.
 
 
