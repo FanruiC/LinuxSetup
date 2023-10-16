@@ -102,7 +102,7 @@ When compiling slatec, add to FFLAGS
 > std=legacy implies -fallow-argument-mismatch. See [GCC GNU POST](https://gcc.gnu.org/onlinedocs/gfortran/Fortran-Dialect-Options.html)
 #### Benchmark
 simple curved pipe 500 steps time:
-1. 4 p-cores
+- 4 p-cores
 ```
 total elapsed time             :   6.87770E+01 sec
 total solver time w/o IO       :   6.75993E+01 sec
@@ -110,7 +110,22 @@ time/timestep                  :   1.35199E-01 sec
 avg throughput per timestep    :   4.83097E+05 gridpts/CPUs
 total max memory usage         :   7.62421E-01 GB
 ```
-2. 8 p-cores
+- 8 p-cores
+```
+total elapsed time             :   4.11416E+01 sec
+total solver time w/o IO       :   4.02011E+01 sec
+time/timestep                  :   8.04022E-02 sec
+avg throughput per timestep    :   4.06171E+05 gridpts/CPUs
+total max memory usage         :   1.06496E+00 GB
+```
+- 8 p-cores with 16 e-cores
+```
+total elapsed time             :   5.79000E+01 sec
+total solver time w/o IO       :   5.52794E+01 sec
+time/timestep                  :   1.10559E-01 sec
+avg throughput per timestep    :   9.84604E+04 gridpts/CPUs
+total max memory usage         :   3.06190E+00 GB
+```
 
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
