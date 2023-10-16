@@ -1,0 +1,456 @@
+c-----------------------------------------------------------------------
+c  nek5000 user-file template
+c
+c  user specified routines:
+c     - uservp  : variable properties
+c     - userf   : local acceleration term for fluid
+c     - userq   : local source term for scalars
+c     - userbc  : boundary conditions
+c     - useric  : initial conditions
+c     - userchk : general purpose routine for checking errors etc.
+c     - userqtl : thermal divergence for lowMach number flows 
+c     - usrdat  : modify element vertices 
+c     - usrdat2 : modify mesh coordinates
+c     - usrdat3 : general purpose routine for initialization
+c     
+c-----------------------------------------------------------------------
+      subroutine uservp(ix,iy,iz,eg) ! set variable properties
+
+c      implicit none
+
+      integer ix,iy,iz,eg
+     
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      integer e
+c     e = gllel(eg)
+
+      udiff  = 0.0
+      utrans = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userf(ix,iy,iz,eg) ! set acceleration term
+c
+c     Note: this is an acceleration term, NOT a force!
+c     Thus, ffx will subsequently be multiplied by rho(x,t).
+c
+c      implicit none
+
+      integer ix,iy,iz,eg
+
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      integer e
+c     e = gllel(eg)
+
+      ffx = 0.0
+      ffy = 0.0
+      ffz = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userq(ix,iy,iz,eg) ! set source term
+
+c      implicit none
+
+      integer ix,iy,iz,eg
+
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      integer e
+c     e = gllel(eg)
+
+      qvol   = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userbc_my(ix,iy,iz,iside,eg) ! set up boundary conditions
+c
+c     NOTE ::: This subroutine MAY NOT be called by every process
+c
+      implicit none
+
+      integer ix,iy,iz,iside,eg
+
+      integer e
+      real u0, delta
+      real dongOutflow
+      real freq
+      real(8) Re, Rw
+      real(8) en(3) ,rr, unn       
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      ! en = (1.0d0, 0.0d0, 0.0d0)
+      Re = 225.0d0
+      Rw = 225.0d0
+      e = gllel(eg)
+
+      if (cbu .eq. 'oo  ') then
+              u0 = 1.0
+              delta = 0.1
+              pa = dongOutflow(ix,iy,iz,e,iside,u0,delta)
+      endif
+
+      if (cbu .eq. 'o  ') then
+            pa = 6.8
+      endif
+
+      if (cbu .eq. 'v  ') then
+        rr = sqrt(y**2 + z**2)
+        call womersley_bc(rr, Re, Rw, ix, iy, iz, eg, unn)
+      ux = unn
+      uy = 0.0
+      uz = 0.0
+      endif
+      
+      if (cbu. eq. 's  ') then
+        trx = -0.5
+        try = 0.
+        trz = 0.
+      endif
+
+      return
+      end
+c-----------------------------------------------------------------------
+c-----------------------------------------------------------------------
+      subroutine userbc(ix,iy,iz,iside,eg) ! set up boundary conditions
+c
+c     NOTE ::: This subroutine MAY NOT be called by every process
+c
+      implicit double precision (a-h,o-y)
+
+      integer ix,iy,iz,iside,eg,nz,ierr
+
+      integer e
+      real u0, delta
+      real dongOutflow
+      real freq
+      
+      complex*8 zi
+      complex*8 ztemp
+      complex*8 ztemp1
+      complex*8 temp1
+      complex*8 temp2
+
+      real recip_freq
+      real xtmp
+      save recip_freq
+
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      common /mybcs/ uzc(lx1,ly1,lz1,lelt), uzs(lx1,ly1,lz1,lelt)
+
+      e = gllel(eg)
+
+      if (istep.le.1) then  !  Set & store static part of oscillating inlet BC
+
+c        time ---> physical time
+c        u_max ---> maximum piston-like velocity averaged over cross-sectional area
+
+         re_w = 225.0d0
+         recip_freq = 0.5/pi
+         rr = sqrt(z*z + y*y)
+
+         zi = (0., 1.)
+         visc = 1./re_w
+
+         d = 1.
+         u_max = 1.
+         alpha = 0.5*sqrt(re_w)
+
+         ztemp1 = alpha*exp((3*pi*zi)/4.)
+         call cbesj(ztemp1, 0, 1, 1, temp1, nz, ierr)
+         ber_alpha = real(temp1)
+         bei_alpha = aimag(temp1)
+
+         call cbesj(ztemp1, 1, 1, 1, temp2, nz, ierr)
+         ber1_alpha = real(temp2)
+         bei1_alpha = aimag(temp2)
+
+         ztemp1 = 2.*alpha*(rr/d)*exp((3*pi*zi)/4.)
+         call cbesj(ztemp1, 0, 1, 1, ztemp, nz, ierr)
+         ber_R = real(ztemp)
+         bei_R = aimag(ztemp)
+
+         dber_alpha=(bei1_alpha+ber1_alpha)/sqrt(2.)
+         dbei_alpha=(bei1_alpha-ber1_alpha)/sqrt(2.)
+
+         xtmp=(ber_alpha**2) + (bei_alpha**2)
+
+         c1=((ber_alpha*dbei_alpha)-(bei_alpha*dber_alpha))/xtmp
+         c2=((ber_alpha*dber_alpha)+(bei_alpha*dbei_alpha))/xtmp
+
+         sigma=(8/(alpha**3))*sqrt((alpha-(2*c1))**2 + (4*c2**2))
+
+         dk=32*u_max*visc/(sigma*d**2)
+
+         uzc(ix,iy,iz,e) = (dk*d**2/(4*alpha**2*visc))
+     $                  * (((bei_alpha*ber_R)-(ber_alpha*bei_R))/xtmp)
+
+         uzs(ix,iy,iz,e) = (dk*d**2/(4*alpha**2*visc))
+     $                  * (1-((ber_alpha*ber_R)+(bei_alpha*bei_R))/xtmp)
+      endif
+      
+      if (cbu .eq.'v  ') then
+        arg = 1.*time
+        ux = uzc(ix,iy,iz,e)*cos(arg)+uzs(ix,iy,iz,e)*sin(arg)
+      !  ux = cos(arg)
+c	write(6,*) 'TEST_xx ', temp1
+      endif
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine useric(ix,iy,iz,eg) ! set up initial conditions
+
+c      implicit none
+
+      integer ix,iy,iz,eg
+
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      ux   = 0.0
+      uy   = 0.0
+      uz   = 0.0
+      temp = 0.0
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userchk()
+
+c      implicit none
+
+      include 'SIZE'
+      include 'TOTAL'
+      
+      common /myoutflow/ d(lx1,ly1,lz1,lelt),m1(lx1*ly1*lz1,lelt)
+      real m1
+      rq  = 2.0
+      uin = 0.0
+c      call turb_outflow(d,m1,rq,uin) 
+      
+      if (mod(istep, 2) .eq. 0) then
+            call hpts()
+      endif
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine userqtl ! Set thermal divergence
+
+      call userqtl_scig 
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat()   ! This routine to modify element vertices
+
+      implicit none
+
+      include 'SIZE'
+      include 'TOTAL'
+
+      integer iside, ie !local variables
+      do ie=1, nelv
+            do iside=1, 2*ldim
+                  cbc(iside,ie,1) = "E  "
+                  if (boundaryID(iside,ie) .eq. 1) then
+                  cbc(iside,ie,1) = "v  "
+                  elseif (boundaryID(iside,ie) .eq. 2) then
+                  cbc(iside,ie,1) = "ON "
+                  elseif (boundaryID(iside,ie) .eq. 3) then
+                  cbc(iside,ie,1) = "W  "
+                  endif
+            enddo
+      enddo
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat2()  ! This routine to modify mesh coordinates
+
+c      implicit none
+
+      include 'SIZE'
+      include 'TOTAL'
+
+      return
+      end
+c-----------------------------------------------------------------------
+      subroutine usrdat3()
+
+c      implicit none
+
+      include 'SIZE'
+      include 'TOTAL'
+
+      return
+      end
+c-----------------------------------------------------------------------
+      function dongOutflow(ix, iy, iz, e, iside, u0, delta)
+
+      implicit none
+
+      integer ix, iy, iz, e, iside
+      real u0, delta
+      real dongOutflow
+
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+
+      real sn(3), s0, vn !local variables
+
+      ux = vx(ix, iy, iz, e)
+      uy = vy(ix, iy, iz, e)
+      uz = vz(ix, iy, iz, e)
+
+      call getSnormal(sn, ix, iy, iz, iside, e)
+      vn = ux*sn(1) + uy*sn(2) + uz*sn(3)
+      s0 = 0.5*(1.0 - tanh(vn/u0/delta))
+
+      dongOutflow = -0.5 * (ux*ux+uy*uy+uz*uz) * s0
+
+      return
+      end
+c=======================================================================
+c=======================================================================
+      subroutine womersley_bc(rr, Re, Rw, ix, iy, iz, eg, unn)
+      implicit none
+      include 'SIZE'
+      include 'TOTAL'
+      include 'NEKUSE'
+      real(8) rr, Re, Rw
+      integer ix, iy, iz, eg
+      !internal use
+      integer ie
+      real(8) A, B, C, D, St, unn
+      real(8) Coe_c(lx1, ly1, lz1, lelt), Coe_s(lx1, ly1, lz1, lelt)
+      common /wo_bc/ Coe_c, Coe_s
+      !functions
+      real(8) ber, bei, dber, dbei
+
+      ie = gllel(eg)
+
+      IF (istep .le. 1) then
+      x = 0.5d0 * sqrt(Rw)
+      y = rr    * sqrt(Rw)
+      A = (ber(x)* ber(y) + bei(x)* bei(y)) / (ber(x)**2 + bei(x)**2)
+      B = (bei(x)* ber(y) - ber(x)* bei(y)) / (ber(x)**2 + bei(x)**2)
+      C = (ber(x)*dbei(x) - bei(x)*dber(x)) / (ber(x)**2 + bei(x)**2)
+      D = (ber(x)*dber(x) + bei(x)*dbei(x)) / (ber(x)**2 + bei(x)**2)
+      
+      Coe_c(ix,iy,iz,ie)=B
+     $ /sqrt((1.0d0-2.0d0*C/x)**2 + (2.0d0*D/x)**2)
+      Coe_s(ix,iy,iz,ie)=(1.0d0-A)
+     $ /sqrt((1.0d0-2.0d0*C/x)**2 + (2.0d0*D/x)**2)
+      ENDIF
+
+      St = Rw / Re
+      unn = Coe_c(ix,iy,iz,ie) * cos(St * time) + 
+     $      Coe_s(ix,iy,iz,ie) * sin(St * time) 
+      end subroutine womersley_bc
+c-----------------------------------------------------------------------     
+      function ber(x)
+      implicit none
+      real(8) x
+      real(8) ber
+      !PARAMETER USE
+      real(8) PI
+      complex(8) i
+      parameter(pi=3.14159265358979d0)
+      parameter(i=(0.0d0, 1.0d0))
+      !EXTERNAL USE
+      integer N, NZ, IERR
+      parameter(N=1)
+      real(8) CYR(N), CYI(N)
+      !Intermediate variable
+      complex(8) jx
+
+      jx = x*exp(3.0d0/4.0d0*PI*i)
+      call zbesj(real(jx), aimag(jx), 0d0, 1, N, CYR, CYI, NZ, IERR)
+      ber = CYR(1)
+      return
+      end
+c-----------------------------------------------------------------------    
+      function bei(x)
+      implicit none
+      real(8) x
+      real(8) bei
+      !PARAMETER USE
+      real(8) PI
+      complex(8) i
+      parameter(pi=3.14159265358979d0)
+      parameter(i=(0.0d0, 1.0d0))
+      !EXTERNAL USE
+      integer N, NZ, IERR
+      parameter(N=1)
+      real(8) CYR(N), CYI(N)
+      !Intermediate variable
+      complex(8) jx
+
+      jx = x*exp(3.0d0/4.0d0*PI*i)
+      call zbesj(real(jx), aimag(jx), 0d0, 1, N, CYR, CYI, NZ, IERR)
+      bei = CYI(1)
+      return
+      end
+c-----------------------------------------------------------------------
+      function dber(x)
+      real(8) x
+      real(8) dber
+      !PARAMETER USE
+      real(8) PI
+      complex(8) i
+      parameter(pi=3.14159265358979d0)
+      parameter(i=(0.0d0, 1.0d0))
+      !EXTERNAL USE
+      integer N, NZ, IERR
+      parameter(N=1)
+      real(8) CYR(N), CYI(N)
+      !Intermediate variable
+      complex(8) jx
+
+      jx = x*exp(3.0d0/4.0d0*PI*i)      
+      call zbesj(real(jx), aimag(jx), 1d0, 1, N, CYR, CYI, NZ, IERR)
+      dber = (CYI(1) + CYR(1)) / sqrt(2.0d0)
+      return
+      end
+c-----------------------------------------------------------------------
+      function dbei(x)
+      real(8) x
+      real(8) dbei
+      !PARAMETER USE
+      real(8) PI
+      complex(8) i
+      parameter(pi=3.14159265358979d0)
+      parameter(i=(0.0d0, 1.0d0))
+      !EXTERNAL USE
+      integer N, NZ, IERR
+      parameter(N=1)
+      real(8) CYR(N), CYI(N)
+      !Intermediate variable
+      complex(8) jx
+
+      jx = x*exp(3.0d0/4.0d0*PI*i)      
+      call zbesj(real(jx), aimag(jx), 1d0, 1, N, CYR, CYI, NZ, IERR)
+      dbei = (CYI(1) - CYR(1)) / sqrt(2.0d0)
+      return
+      end
+c-----------------------------------------------------------------------
