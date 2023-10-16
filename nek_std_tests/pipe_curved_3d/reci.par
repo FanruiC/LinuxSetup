@@ -1,0 +1,43 @@
+[GENERAL]
+startFrom= reci.restart
+stopAt = numSteps
+#stopAt = endTime
+
+numSteps = 5
+dt = 0.005235987756
+
+###################
+#variableDT = no
+#initialDT = <real>
+###################
+writeControl = timeStep
+writeInterval = 1
+
+filtering = none
+dealiasing = yes
+timeStepper = BDF2
+##################
+
+#userParam01 = 
+#userParam02 = 
+
+[PROBLEMTYPE]
+equation = incompNS
+stressformulation = no
+
+[MESH]
+[VELOCITY]
+viscosity = -3000 
+density = 1.0
+
+residualTol = 1.0e-8
+residualProj = no
+writeToFieldFile = yes
+
+[PRESSURE]
+residualTol = 1.0e-6
+residualProj = no
+writeToFieldFile = yes
+
+preconditioner = semg_xxt
+solver = GMRES
