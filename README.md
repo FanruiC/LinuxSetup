@@ -95,6 +95,11 @@ Can be installed manually by:
 cp make.inc.example make.inc
 make
 ```
+When compiling slatec, add to FFLAGS
+```
+-std=legacy
+```
+> std=legacy implies -fallow-argument-mismatch. See [GCC GNU POST](https://gcc.gnu.org/onlinedocs/gfortran/Fortran-Dialect-Options.html)
 
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
