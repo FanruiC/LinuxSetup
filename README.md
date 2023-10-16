@@ -54,6 +54,11 @@ After initialisation, run:
 ```
 conda config --set auto_activate_base false
 ```
+Run to start anaconda navigator:
+```
+conda activate
+anaconda-navigator
+```
 ### gmsh
 ### nek5000
 Use "git clone --recursive" to contain "example folder". If fogot:
