@@ -134,7 +134,14 @@ time/timestep                  :   8.62959E-02 sec
 avg throughput per timestep    :   1.89215E+05 gridpts/CPUs
 total max memory usage         :   1.90515E+00 GB
 ```
-
+- 24 cores with hyper-threads
+```
+total elapsed time             :   3.93593E+01 sec
+total solver time w/o IO       :   3.75096E+01 sec
+time/timestep                  :   7.50192E-02 sec
+avg throughput per timestep    :   1.45105E+05 gridpts/CPUs
+total max memory usage         :   3.01625E+00 GB
+```
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
 > When building: p-core 4.6Ghz, e-core 3.6Ghz. Took 5-10 mins. Fan is NOT running loudly. Avg temps 80-85C. Max P-core temp 97C with 5.6Ghz.
