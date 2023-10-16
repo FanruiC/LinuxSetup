@@ -152,9 +152,9 @@ total max memory usage         :   3.01625E+00 GB
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
 > When building: p-core 4.6Ghz, e-core 3.6Ghz. Took 5-10 mins. Fan is NOT running loudly. Avg temps 80-85C. Max P-core temp 97C with 5.6Ghz.
-> Paraview must be built with -DPARAVIEW_ENABLE_VISITBRIDGE=ON to enable reading NEK5000 data.
-> Further, to set the above option, we "might" need to set -DPARAVIEW_ENABLE_GDAL=ON
-> But, to set the above option, we MUST install external GDAL library by:
+Paraview must be built with -DPARAVIEW_ENABLE_VISITBRIDGE=ON to enable reading NEK5000 data.
+Further, to set the above option, we "might" need to set -DPARAVIEW_ENABLE_GDAL=ON
+But, to set the above option, we MUST install external GDAL library by:
 ```
 sudo apt install libgdal-dev
 ```
