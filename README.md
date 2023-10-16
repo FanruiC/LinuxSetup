@@ -95,4 +95,8 @@ sudo tune2fs -m 0 /dev/device
 用于设置系统空间为0%而不是默认的5%
 ### Chrome 页面按住拖动bug
 > 暂未找解决办法
-
+### X11 NOT working well on multi-scale for different monitors
+X11 has only a global scale setting for monitors. Wayland can fix this as mentioned by [this post](https://www.reddit.com/r/Kubuntu/comments/qgdm7g/comment/ifey5h4/)
+```
+sudo apt install plasma-workspace-wayland
+```
