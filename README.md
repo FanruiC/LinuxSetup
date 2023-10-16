@@ -126,6 +126,14 @@ time/timestep                  :   1.10559E-01 sec
 avg throughput per timestep    :   9.84604E+04 gridpts/CPUs
 total max memory usage         :   3.06190E+00 GB
 ```
+- 16 cores with hyper-threads
+```
+total elapsed time             :   4.49439E+01 sec
+total solver time w/o IO       :   4.31479E+01 sec
+time/timestep                  :   8.62959E-02 sec
+avg throughput per timestep    :   1.89215E+05 gridpts/CPUs
+total max memory usage         :   1.90515E+00 GB
+```
 
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
