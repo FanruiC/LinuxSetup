@@ -76,6 +76,20 @@ sudo apt install gfortran         #provides gfortran
 sudo apt install libopenmpi-dev   #provides openmpi
 ```
 > This is an auto way to install openmpi, need to configure compiling flags for eg. slatec etc.
+#### libslatec
+Download and install slatec and lapack from [NETLIB](netlib.org)
+> lapack is needed for slatec
+> lapack3 is the package name that ubuntu installed by default.
+Run the following to check if lapack exists:
+```
+dpkg -l | grep liblapck
+or
+apt list --installed | grep liblapack
+```
+Run the following to check where lapack locates:
+```
+dpkg -L liblapack3
+```
 ### paraview
 Paraview is built locally for best performance. Follow [Build Paraview Gitlab](https://gitlab.kitware.com/paraview/paraview/-/blob/master/Documentation/dev/build.md#linux) to finish build.
 > When building: p-core 4.6Ghz, e-core 3.6Ghz. Took 5-10 mins. Fan is NOT running loudly. Avg temps 80-85C. Max P-core temp 97C with 5.6Ghz.
