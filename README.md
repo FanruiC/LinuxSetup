@@ -162,6 +162,7 @@ sudo apt install libgdal-dev
 Then we can build and run paraview to read NEK5000 properly.
 
 ### code
+
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
@@ -192,3 +193,8 @@ mpiexec --oversubscribe
 or
 mpiexec --use-hwthread-cpus
 ```
+### Warning shown when running OPENMPI
+>hwloc/linux: Ignoring PCI device with non-16bit domain. Pass --enable-32bits-pci-domain to configure to support such devices (warning: it would break the library ABI, don't enable unless really needed).
+
+Tried: uninstall openmpi and build from source:
+
