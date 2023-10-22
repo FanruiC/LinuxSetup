@@ -6,6 +6,13 @@ From Bilibili: [8分钟让你快速掌握Markdown](https://www.bilibili.com/vide
 ```
 sudo timedatectl set-local-rtc 1
 ```
+### Sudo command password cooling time
+```
+cd /etc
+sudo vim sudoers
+Defaults  timestamp_timeout = 120
+:wq!
+```
 ### Input Method
 > FCITX (Flexible Input Method Framework for Chinese and Various Languages) is an open-source input method framework primarily used in Linux-based operating systems.
 ```
