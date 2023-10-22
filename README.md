@@ -198,5 +198,6 @@ mpiexec --use-hwthread-cpus
 
 Tried: uninstall openmpi and build from [openmpi source](https://www.open-mpi.org/faq/?category=building#easy-build).
 Warnings disappears.
-
+### Wayland is not working well
+开机切换到wayland，进入桌面开始卡顿，暂无探索解决办法，切换回x11工作正常
 
