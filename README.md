@@ -208,3 +208,5 @@ Warnings disappears.
 ### Wayland is not working well
 开机切换到wayland，进入桌面开始卡顿，暂无探索解决办法，切换回x11工作正常
 
+### Local libslatec.a is not working well
+paraview显示错误的边界条件，将nt上的slatec包下载好后重新编译解决该问题。
