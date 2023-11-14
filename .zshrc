@@ -79,7 +79,9 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 # The LD_LIBRARY_PATH is used to find linking libraries when using gfortran.
 export LD_LIBRARY_PATH=/usr/local/lib
-
+export PATH=~/gmsh-4.11.1-Linux64/bin:$PATH
+export PATH=~/paraview_build_v5.11.2/bin:$PATH
+export PATH=~/Nek5000/bin:$PATH
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -103,4 +105,19 @@ export LD_LIBRARY_PATH=/usr/local/lib
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias rsync="rsync -vhsrlP --chmod=Dg+s -e ssh" #Setonix recommendation
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/fanrui/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/fanrui/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/fanrui/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/fanrui/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
