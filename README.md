@@ -66,6 +66,18 @@ Run to start anaconda navigator:
 conda activate
 anaconda-navigator
 ```
+Add anaconda icon to start menu:
+go to ~/.local/share/applications
+create a new ASCII text file and make it excutable:
+```
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Anaconda
+Exec=/home/fanrui/anaconda3/bin/anaconda-navigator
+Icon=/home/fanrui/anaconda3/lib/python3.11/site-packages/anaconda_navigator/app/icons/Icon1024.png
+Terminal=false
+```
 ### gmsh
 Download the latest stable binary from gmsh web.
 ### nek5000
