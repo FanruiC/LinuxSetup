@@ -6,7 +6,7 @@ Previous:
 - [ ] Barkley_Blackburn_Sherwin , Direct optimal growth analysis for timesteppers.
 
 Current:
-- [ ] Complete dynamical system course: 【微分方程和动力系统 Differential Equations and Dynamical Systems】 https://www.bilibili.com/video/BV13e411N7Vt/?p=32&share_source=copy_web&vd_source=c7625a8fd7a15d5783e3cc2650543d45
+- [ ] Complete dynamical system course: [微分方程和动力系统 Differential Equations and Dynamical Systems]( https://www.bilibili.com/video/BV13e411N7Vt/?p=32&share_source=copy_web&vd_source=c7625a8fd7a15d5783e3cc2650543d45)
 - [ ] Review, Fluid Mechanics
 - [ ] Read, Erik Bostrom, Investigation of outflow boundary conditions for convection-dominated incompressible fluid flows in a spectral element framework
 
