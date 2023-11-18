@@ -13,4 +13,6 @@ Current:
 ## 18 Nov 23
 - [ ] 11/136 Complete Openmichigan: [Lectures on Continuum Physics](https://open.umich.edu/find/open-educational-resources/engineering/lectures-continuum-physics)
 - [ ] Review, [Interactive Linear Algebra](https://textbooks.math.gatech.edu/ila/index.html)
+- [ ] Complete, [麻省理工学院 - MIT - 线性代数 我愿称之为线性代数教程天花板](https://www.bilibili.com/video/BV16Z4y1U7oU/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=87f333e21626c3c3bbbb43b6711d2d81)
+- [ ] Gilbert Strang 同时教授[18.085](), [18.086]() 课程
        
