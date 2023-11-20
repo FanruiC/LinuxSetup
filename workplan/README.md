@@ -20,3 +20,4 @@ Current:
 - [ ] Reading literatures and decide the structures of the upcoming paper and the structures of the presentation slides, as well as the structures of upcoming simulations to do.<br>
 Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
 - [x] Rebuild 3D model of the bent pipe including script. Done.
+- [x] Running Re550, 94080 elements case
