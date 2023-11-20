@@ -15,4 +15,8 @@ Current:
 - [ ] Review, [Interactive Linear Algebra](https://textbooks.math.gatech.edu/ila/index.html)
 - [ ] Complete, [麻省理工学院 - MIT - 线性代数 我愿称之为线性代数教程天花板](https://www.bilibili.com/video/BV16Z4y1U7oU/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=87f333e21626c3c3bbbb43b6711d2d81)
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
-       
+## 20 Nov 23
+- [ ] Learning Paraview visulisation techs.
+- [ ] Reading literatures and decide the structures of the upcoming paper and the structures of the presentation slides, as well as the structures of upcoming simulations to do.
+      Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
+- [ ] 
