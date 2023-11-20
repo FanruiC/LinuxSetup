@@ -96,7 +96,7 @@ sudo apt install libopenmpi-dev   #provides openmpi
 ```
 > This is an auto way to install openmpi, need to configure compiling flags for eg. slatec etc.
 #### libslatec & liblapack
-Download and install slatec and lapack from [NETLIB](netlib.org)
+Download and install slatec and lapack from [NETLIB](www.netlib.org)
 > lapack is needed for slatec
 > lapack3 is the package name that ubuntu installed by default.
 Run the following to check if lapack exists:
