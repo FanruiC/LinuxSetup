@@ -18,5 +18,4 @@ Current:
 ## 20 Nov 23
 - [ ] Learning Paraview visulisation techs.
 - [ ] Reading literatures and decide the structures of the upcoming paper and the structures of the presentation slides, as well as the structures of upcoming simulations to do.
-      Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
-- [ ] 
+Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
