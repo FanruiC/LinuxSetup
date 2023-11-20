@@ -17,5 +17,5 @@ Current:
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
 - [ ] Learning Paraview visulisation techs.
-- [ ] Reading literatures and decide the structures of the upcoming paper and the structures of the presentation slides, as well as the structures of upcoming simulations to do.
+- [ ] Reading literatures and decide the structures of the upcoming paper and the structures of the presentation slides, as well as the structures of upcoming simulations to do.<br>
 Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
