@@ -224,3 +224,8 @@ Warnings disappears.
 paraview显示错误的边界条件，将nt上的slatec包下载好后重新编译解决该问题。
 ### Zotero: too high contrast with Breeze Dark Theme
 打开zotero 右键title bar， more options：选择configure special...然后莫名奇妙好了。
+### 怎么提取文件中的某些行：
+```
+awk '!seen[$0]++' 文件名 > 新文件名
+
+```
