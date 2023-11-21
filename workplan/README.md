@@ -21,3 +21,7 @@ Current:
 Two typical papers are: (Hufnagel et al. 2018) (Pier & Schmid 2017)
 - [x] Rebuild 3D model of the bent pipe including script. Done.
 - [x] Running Re550, 94080 elements case
+## 21 Nov 23
+- [ ] Learning, Resovent Modes
+- [ ] Reading, Drazan, Hydrodynamical Stability
+      
