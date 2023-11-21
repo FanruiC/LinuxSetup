@@ -222,3 +222,5 @@ Warnings disappears.
 
 ### Local libslatec.a is not working well
 paraview显示错误的边界条件，将nt上的slatec包下载好后重新编译解决该问题。
+### Zotero: too high contrast with Breeze Dark Theme
+打开zotero 右键title bar， more options：选择configure special...然后莫名奇妙好了。
