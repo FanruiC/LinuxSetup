@@ -8,3 +8,6 @@ for file in $10.f*; do
        	mv "$file" "reci0.f$new_num"
 done
 
+#using example: nekorder reci 501
+#reci: case name
+#501 : start-number which should become 1
