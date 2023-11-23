@@ -25,4 +25,9 @@ Current:
 - [ ] Learning, Resovent Modes
 - [ ] Reading, Drazan, Hydrodynamical Stability
 ## 23 Nov 23 Justin Meeting
-- [ ] Tracking perturbation evolution at bend entrance and exit together with time. Plot the results. See [Justin's notes for me](https://github.com/FanruiC/LinuxSetup/blob/main/workplan/Fanrui.pdf) 
+- [ ] Tracking perturbation evolution at bend entrance and exit together with time. Plot the results. See [Justin's notes for me](https://github.com/FanruiC/LinuxSetup/blob/main/workplan/Fanrui.pdf)
+### Ideas for uncoming work:
+- [ ] Changing STROKE NUMBER, especially for large numbers
+- [ ] Look at the stability of secondary modes, requires a stablisation algorithm.
+- [ ] Test on rough mesh for parameter analysis first then apply to fine mesh.
+- [ ] Investigate the influence of forced Womersley BCs on flows at bend. Especially when Re is high and probabally need a longer straight section.
