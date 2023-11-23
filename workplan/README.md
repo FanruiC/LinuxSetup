@@ -24,4 +24,5 @@ Current:
 ## 21 Nov 23
 - [ ] Learning, Resovent Modes
 - [ ] Reading, Drazan, Hydrodynamical Stability
-      
+## 23 Nov 23 Justin Meeting
+- [ ] Tracking perturbation evolution at bend entrance and exit together with time. Plot the results. See [Justin's notes for me]() 
