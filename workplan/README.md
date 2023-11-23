@@ -25,4 +25,4 @@ Current:
 - [ ] Learning, Resovent Modes
 - [ ] Reading, Drazan, Hydrodynamical Stability
 ## 23 Nov 23 Justin Meeting
-- [ ] Tracking perturbation evolution at bend entrance and exit together with time. Plot the results. See [Justin's notes for me]() 
+- [ ] Tracking perturbation evolution at bend entrance and exit together with time. Plot the results. See [Justin's notes for me](https://github.com/FanruiC/LinuxSetup/blob/main/workplan/Fanrui.pdf) 
