@@ -27,6 +27,8 @@ Current:
 - Lec 4:
     - A,B are invertible, (AB)的逆等于什么？ What's the inverse of A transpose?
     - If A is invertible, and no permutation matrice is needed, then EA = U, and E is lower triangular, then A = LU
+    - LU = LDU, 一种行乘的理解迅速分解U求出DU
+    - 
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
