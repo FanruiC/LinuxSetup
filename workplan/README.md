@@ -22,6 +22,13 @@ Current:
     - 初等 Elimination matrices 的逆非常好求 
 - Lec 3:
     - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
+    - Inverses: why
+      $$\begin{matrix}
+      1&2\\
+      3&6\\
+      \end{matrix}$$
+      没有逆？一种令人启发的解释。
+    - 
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
