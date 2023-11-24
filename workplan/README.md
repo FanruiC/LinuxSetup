@@ -30,7 +30,13 @@ Current:
       \end{matrix}
       $$
       没有逆？一种令人启发的解释。
-    - 
+$$
+\begin{bmatrix}
+    1 & 2 & 3 \\\\
+    4 & 5 & 6 \\\\
+    7 & 8 & 9
+\end{bmatrix} \tag{4}
+$$
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
