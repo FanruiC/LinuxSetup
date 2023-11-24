@@ -39,9 +39,12 @@ Current:
     - Column subspace defination. Ax=b 有解的条件。
     - Null subspace of A in R(*).
     - Ax=b 的解构成子空间吗？
- - Lec 7:
+ - Lec 7: Solving Ax=0
     - row echelon form, Solving Ax=0, Pivots columns, Free columns. Pivot variables and Free variables. 通解是由free variable 个数的特解的线性组合构成的。
     - reduced row echelon form (RREF), 分块矩阵I,F用于快速求解特解（Null space's basis）！
+ - Lec 8: Solving Ax=b
+    -  Solvability condition on b: Ax=b solvable when b in C(A) 等价于 If a conbination of rows of A gives 0 rows, then same combination of entries of b must give 0.
+    -  
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
