@@ -23,7 +23,7 @@ Current:
 - Lec 3:
     - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
     - Inverses: why 一个矩阵没有逆？两种令人启发的解释
-    - 求逆和解一系列的线性方程组一致，we're back to Gauss, and Jordan comes in.
+    - 求逆和解一系列的线性方程组一致，we're back to Gauss, and Jordan comes in. E[A I] = [EA EI] = [I A^-1]
     -     
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
