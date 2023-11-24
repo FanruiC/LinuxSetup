@@ -35,10 +35,13 @@ Current:
     - Inverse of a permutation matix is it's transpose.
     - R 和 R 的转置相乘总能得到对称矩阵。
     - Defination of subspaces.
- - Lec 6:
+ - Lec 6: From definition to algorithm
     - Column subspace defination. Ax=b 有解的条件。
     - Null subspace of A in R(*).
     - Ax=b 的解构成子空间吗？
+ - Lec 7:
+    - row echelon form, Solving Ax=0, Pivots columns, Free columns. Pivot variables and Free variables. 通解是由free variable 个数的特解的线性组合构成的。
+    - reduced row echelon form (RREF), 分块矩阵I,F用于快速求解特解（Null space's basis）！
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
