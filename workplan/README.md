@@ -23,10 +23,12 @@ Current:
 - Lec 3:
     - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
     - Inverses: why
-      $$\begin{matrix}
-      1&2\\
-      3&6\\
-      \end{matrix}$$
+      $$
+      \begin{matrix}
+      1 & 2\\\\
+      3 & 6
+      \end{matrix}
+      $$
       没有逆？一种令人启发的解释。
     - 
 ---
