@@ -84,6 +84,10 @@ Current:
     - Nullspace and rowspace are orthogonal COMPLEMENTS in R(n) 等价于 Nullspace contains ALL vectors perpenticular to rowspace.
     - Idea of "best solve" Ax=b when there is no solution.
     - The importance of $A^TA$
+ - Lec 15: IMMORTAL
+    - Projections: $\mathbf{p} =\mathbf{a}\frac{\mathbf{a^Tb}}{\mathbf{a^Ta}}$
+    - Least Squares
+    - Projection Matrix
        
 
 ---
