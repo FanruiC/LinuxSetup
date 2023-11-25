@@ -47,6 +47,11 @@ Current:
     -  Particular solution by setting free variables to 0.
     -  If I have a particular solution xp, I can add this vector with any vectors in null space, xn, the right hand side wouldn't change.
     -  m, n, r relation. Full column rank, Full row rank.
+       |r=m=n|r=n<m|r=m<n|r<m,r<n|
+       |:---:|:---:|:---:|:---:|
+       |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
+       
+
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
