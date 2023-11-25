@@ -64,7 +64,8 @@ Current:
  - Lec 12: Skip
  - Lec 13: Skip
 ---
- - Lec 14: 
+ - Lec 14: Orthogonal subspaces, basis, vectors. 90 degrees.
+    - (xT)y = dot product 
        
 
 ---
