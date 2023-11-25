@@ -56,7 +56,7 @@ Current:
       |:---:    |:---:            |:---:          |:---:                            |:---:               |
       |In       |R(m)             |R(n)           |R(n)                             |R(m)                |
       |Dimension|r                |n-r            |r                                |m-r                 |
-      |Basis    |Pivot Cols       |Special solu's |Pivot Rows / first r rows of rref|    |Sp[ecial solu's     |
+      |Basis    |Pivot Cols       |Special solu's |Pivot Rows / First r rows of rref|EA = R, through E   |
        
 
 ---
