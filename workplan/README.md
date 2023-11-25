@@ -86,11 +86,14 @@ Current:
     - The importance of $A^TA$
  - Lec 15: IMMORTAL
     - Projections: $\mathbf{p}=\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
-    - Least Squares
     - Projection Matrix: $\mathbf{p} = P \mathbf{b}$, $P=\frac{\mathbf{aa^T}}{\mathbf{a^T a}}$
        - C(P) is the line through a, Rank(P)=1
        - P is symmetric
        - $P^2=P$
+    - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
+    - The Projection Matrix for high dimention
+    - Least Squares
+ - Lec 16:
        
 
 ---
