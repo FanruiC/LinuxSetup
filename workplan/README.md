@@ -85,7 +85,7 @@ Current:
     - Idea of "best solve" Ax=b when there is no solution.
     - The importance of $A^TA$
  - Lec 15: IMMORTAL
-    - Projections: $\mathbf{p} =\mathbf{a}\frac{\mathbf{a^Tb}}{\mathbf{a^Ta}}$
+    - Projections: $\mathbf{p} =\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
     - Least Squares
     - Projection Matrix
        
