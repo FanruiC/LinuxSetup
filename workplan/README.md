@@ -58,7 +58,13 @@ Current:
       |Dimension|r                |n-r            |r                                |m-r                 |
       |Basis    |Pivot Cols       |Special solu's |Pivot Rows / First r rows of rref|EA = R, through E   |
       
-    - 广义的 Vector Spaces 
+    - 广义的 Vector Spaces
+ - Lec 11: Rank 1 matrices
+    - Rank 1 matrices are the building blocks for big matrices. Can be written as the multiplication of a col vector times row vector.
+ - Lec 12: Skip
+ - Lec 13: Skip
+---
+ - Lec 14: 
        
 
 ---
