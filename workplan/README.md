@@ -56,7 +56,7 @@ Current:
     - Null Space N(A) in R(n)
     - Raw Space C(AT) in R(n)
     - LeftNull Space N(AT) in R(m)
-      |Four subspaces from matrix A(m x n)|
+      |Four subspaces from matrix A(m x n)||||
       |:---:|:---:|:---:|:---:|
        
 
