@@ -88,6 +88,7 @@ Current:
     - Projections: $\mathbf{p}=\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
     - Least Squares
     - Projection Matrix: $\mathbf{p} = P \mathbf{b}$, $P=\frac{\mathbf{aa^T}}{\mathbf{a^T a}}$
+       - C(P) is the line through a, Rank(P)=1 
        
 
 ---
