@@ -50,6 +50,14 @@ Current:
        |r=m=n|r=n<m|r=m<n|r<m,r<n|
        |:---:|:---:|:---:|:---:|
        |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
+ - Lec 9: Basis, Dimension, independency
+ - Lec 10: Four subspaces that come from a matrix A(m x n)
+    - Column Space C(A) in R(m)
+    - Null Space N(A) in R(n)
+    - Raw Space C(AT) in R(n)
+    - LeftNull Space N(AT) in R(m)
+      |Four subspaces from matrix A(m x n)|
+      |:---:|:---:|:---:|:---:|
        
 
 ---
