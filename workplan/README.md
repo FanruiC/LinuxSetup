@@ -46,7 +46,7 @@ Current:
     -  Solvability condition on b: Ax=b solvable when b in C(A) 等价于 If a conbination of rows of A gives 0 rows, then same combination of entries of b must give 0.
     -  Particular solution by setting free variables to 0.
     -  If I have a particular solution xp, I can add this vector with any vectors in null space, xn, the right hand side wouldn't change.
-    -  m, n, r relation. Full column rank, Full row rank.
+    -  m, n, r relation. Full column rank, Full row rank. RANK tells everything about the number of solutions.
        |r=m=n|r=n<m|r=m<n|r<m,r<n|
        |:---:|:---:|:---:|:---:|
        |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
