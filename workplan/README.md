@@ -52,9 +52,10 @@ Current:
        |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
  - Lec 9: Basis, Dimension, independency
  - Lec 10: Four subspaces that come from a matrix A(m x n)
-      |Column Space C(A)|Null Space N(A)|Raw Space C(AT)|LeftNull Space N(AT|
-      |:---:|:---:|:---:|:---:|
-      |R(m) |R(n) |R(n) |R(m) |
+      |Name|Column Space C(A)|Null Space N(A)|Raw Space C(AT)|LeftNull Space N(AT)|
+      |:---:|:---:|:---:|:---:|:---:|
+      |In|R(m) |R(n) |R(n) |R(m)|
+      
        
 
 ---
