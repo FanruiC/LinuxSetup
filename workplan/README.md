@@ -65,7 +65,11 @@ Current:
  - Lec 13: Skip
 ---
  - Lec 14: Orthogonal subspaces, basis, vectors. 90 degrees.
-    - (xT)y = dot product 
+    - (xT)(y) = dot product = 0 : x and y are orthoganal vector.
+    - Row space is orthogonal to null space, why? Think about orthogonal definition: dot product of 2 vectors equals 0.
+    - Nullspace and rowspace are orthogonal COMPLEMENTS in R(n) 等价于 Nullspace contains ALL vectors perpenticular to rowspace.
+    - Idea of "best solve" Ax=b when there is no solution.
+    - The importance of $\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$
        
 
 ---
