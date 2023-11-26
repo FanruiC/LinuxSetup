@@ -106,8 +106,7 @@ $$
   1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
 $$
-    - Orthogonal matrix: $Q^T Q$
-    - Graham and Schmidt
+
 
 $$
   \begin{pmatrix}
