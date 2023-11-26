@@ -105,7 +105,7 @@ Current:
   - Least Squares: $A^T Ax = A^T b$, 大前提：A is Column Full Rank.
   - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
 - Lec 17:
-  - Orthogonal basis: $q_{i}^{T} q_{j}=(0, i\ne j or 1, i=j)$
+  - Orthogonal basis: $q_{i}^{T} q_{j}=(0, i\ne j\ or\ 1, i=j)$
   - Orthogonal matrix: $Q^T Q$
   - Graham and Schmidt:
 
