@@ -107,8 +107,7 @@ Current:
 - Lec 17:
   - Orthogonal basis:
 
-$
-q_{i}^{T} q_{j}=\left(0, i\ne j1, i =  j\right)$
+$q_{i}^{T} q_{j}=0, i\ne j1, i =  j$
 
   - Orthogonal matrix: $Q^T Q$
   - Graham and Schmidt:
