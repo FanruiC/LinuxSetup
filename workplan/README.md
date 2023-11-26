@@ -93,7 +93,12 @@ Current:
     - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
     - The Projection Matrix for high dimention
  - Lec 16:
-    - Least Squares: $A^T Ax = A^T b$
+    - Least Squares: $A^T Ax = A^T b$, 大前提：A is Column Full Rank.
+    - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
+ - Lec 17:
+    - Orthogonal basis: $q_{i}^{T} q_{j}=\{\begin{matrix}0, i\ne j \\1, i =  j\end{matrix}$
+    - Orthogonal matrix: $Q^T Q$
+    - Graham and Schmidt
        
 
 ---
