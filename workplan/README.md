@@ -118,7 +118,7 @@ Current:
 - [ ] Investigate the influence of using a Sponge at both inlet and outlet, checking for any difference occurs at bend.
 ## 26 Nov
 - [ ] Steam 秋促购买
-- [ ] 行李箱
+- [ ] 行李箱x2
 - [x] 购买保健品
 - [ ] 侯叔叔，琳爸妈爷奶，others
 - [x] 购买电话卡
