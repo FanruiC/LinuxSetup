@@ -99,10 +99,7 @@ Current:
     - Orthogonal basis:
 $$
 q_{i}^{T} q_{j}=
-\begin{matrix}
-0, i\ne j \\
-1, i =  j
-\end{matrix}
+
 $$
     - Orthogonal matrix: $Q^T Q$
     - Graham and Schmidt
