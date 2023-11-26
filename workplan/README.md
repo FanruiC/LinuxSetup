@@ -22,8 +22,6 @@ q_{i}^{T} q_{j}=\left\\{
 \right\\}
 $$
 
-$q_{i}^{T} q_{j}=$
-
 ## 15 Nov 23
 Previous:
 - [ ] DMD, SVD introduction
@@ -110,13 +108,7 @@ Current:
   - Orthogonal basis:
 
 $
-q_{i}^{T} q_{j}=\left\\{
-\begin{matrix}
-0, i\ne j \\
-1, i =  j \\
-\end{matrix}
-\right\\}
-$
+q_{i}^{T} q_{j}=\left(0, i\ne j1, i =  j\right)$
 
   - Orthogonal matrix: $Q^T Q$
   - Graham and Schmidt:
