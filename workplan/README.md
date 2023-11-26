@@ -117,8 +117,8 @@ $$
   \end{pmatrix}
 $$       
 
-- Orthogonal matrix: $Q^T Q$
-- Graham and Schmidt
+   - Orthogonal matrix: $Q^T Q$
+   - Graham and Schmidt
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
