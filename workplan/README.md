@@ -107,18 +107,8 @@ $$
   \end{pmatrix}
 $$
 
-
-$$
-  \begin{pmatrix}
-  1 & a_1 & a_1^2 & \cdots & a_1^n \\
-  1 & a_2 & a_2^2 & \cdots & a_2^n \\
-  \vdots & \vdots & \vdots & \ddots & \vdots \\
-  1 & a_m & a_m^2 & \cdots & a_m^n \\
-  \end{pmatrix}
-$$       
-
-   - Orthogonal matrix: $Q^T Q$
-   - Graham and Schmidt
+    - Orthogonal matrix: $Q^T Q$
+    - Graham and Schmidt
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
