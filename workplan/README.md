@@ -14,7 +14,7 @@ $$
 $$
 
 $$
-q_{i}^{T}q_{j}=\{
+q_{i}^{T}q_{j}=
 \begin{matrix}
 0, i\ne j \\
 1, i =  j \\
