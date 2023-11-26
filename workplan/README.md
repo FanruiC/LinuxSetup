@@ -45,18 +45,18 @@ Current:
     - Lower triagnal means we are doing minus only row by row to the bottom. Why A=LU is better than EA=U? Try on a 4x4 example.
     - How many operations for LU decomposition for computer?
     - How many permutation matrices for a nxn square matrix? Answer: A(n,n)
- - Lec 5:
+- Lec 5:
     - Inverse of a permutation matix is it's transpose.
     - R 和 R 的转置相乘总能得到对称矩阵。
     - Defination of subspaces.
- - Lec 6: From definition to algorithm
+- Lec 6: From definition to algorithm
     - Column subspace of A in R(m). Ax=b 有解的条件
     - Null subspace of A in R(n).
     - Ax=b 的解构成子空间吗？
- - Lec 7: Solving Ax=0
+- Lec 7: Solving Ax=0
     - row echelon form, Solving Ax=0, Pivots columns, Free columns. Pivot variables and Free variables. 通解是由free variable 个数的特解的线性组合构成的。
     - reduced row echelon form (RREF), 分块矩阵I,F用于快速求解特解（Null space's basis）！
- - Lec 8: Solving Ax=b
+- Lec 8: Solving Ax=b
     -  Solvability condition on b: Ax=b solvable when b in C(A) 等价于 If a conbination of rows of A gives 0 rows, then same combination of entries of b must give 0.
     -  Particular solution by setting free variables to 0.
     -  If I have a particular solution xp, I can add this vector with any vectors in null space, xn, the right hand side wouldn't change.
@@ -64,8 +64,8 @@ Current:
        |r=m=n|r=n<m|r=m<n|r<m,r<n|
        |:---:|:---:|:---:|:---:|
        |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
- - Lec 9: Basis, Dimension, independency
- - Lec 10: Four subspaces that come from a matrix A(m x n) with rank r
+- Lec 9: Basis, Dimension, independency
+- Lec 10: Four subspaces that come from a matrix A(m x n) with rank r
     - |Name     |Column Space C(A)|Null Space N(A)|Raw Space C(AT)|LeftNull Space N(AT)|
       |:---:    |:---:            |:---:          |:---:                            |:---:               |
       |In       |R(m)             |R(n)           |R(n)                             |R(m)                |
@@ -78,13 +78,13 @@ Current:
  - Lec 12: Skip
  - Lec 13: Skip
 ---
- - Lec 14: Orthogonal subspaces, basis, vectors. 90 degrees.
+- Lec 14: Orthogonal subspaces, basis, vectors. 90 degrees.
     - (xT)(y) = dot product = 0 : x and y are orthoganal vector.
     - Row space is orthogonal to null space, why? Think about orthogonal definition: dot product of 2 vectors equals 0.
     - Nullspace and rowspace are orthogonal COMPLEMENTS in R(n) 等价于 Nullspace contains ALL vectors perpenticular to rowspace.
     - Idea of "best solve" Ax=b when there is no solution.
     - The importance of $A^TA$
- - Lec 15: IMMORTAL
+- Lec 15: IMMORTAL
     - Projections: $\mathbf{p}=\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
     - Projection Matrix: $\mathbf{p} = P \mathbf{b}$, $P=\frac{\mathbf{aa^T}}{\mathbf{a^T a}}$
        - C(P) is the line through a, Rank(P)=1
@@ -92,11 +92,19 @@ Current:
        - $P^2=P$
     - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
     - The Projection Matrix for high dimention
- - Lec 16:
+- Lec 16:
     - Least Squares: $A^T Ax = A^T b$, 大前提：A is Column Full Rank.
     - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
- - Lec 17:
-    - Orthogonal basis:$q_i^T q_j=$
+- Lec 17:
+    - Orthogonal basis: $q_i^T q_j=$
+$$
+  \begin{pmatrix}
+  1 & a_1 & a_1^2 & \cdots & a_1^n \\
+  1 & a_2 & a_2^2 & \cdots & a_2^n \\
+  \vdots & \vdots & \vdots & \ddots & \vdots \\
+  1 & a_m & a_m^2 & \cdots & a_m^n \\
+  \end{pmatrix}
+$$
     - Orthogonal matrix: $Q^T Q$
     - Graham and Schmidt
        
