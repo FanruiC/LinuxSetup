@@ -73,32 +73,32 @@ Current:
     |Basis    |Pivot Cols       |Special solu's |Pivot Rows / First r rows of rref|EA = R, through E   |
       
   - 广义的 Vector Spaces
- - Lec 11: Rank 1 matrices
-    - Rank 1 matrices are the building blocks for big matrices. Can be written as the multiplication of a col vector times row vector.
- - Lec 12: Skip
- - Lec 13: Skip
+- Lec 11: Rank 1 matrices
+  - Rank 1 matrices are the building blocks for big matrices. Can be written as the multiplication of a col vector times row vector.
+- Lec 12: Skip
+- Lec 13: Skip
 ---
 - Lec 14: Orthogonal subspaces, basis, vectors. 90 degrees.
-    - (xT)(y) = dot product = 0 : x and y are orthoganal vector.
-    - Row space is orthogonal to null space, why? Think about orthogonal definition: dot product of 2 vectors equals 0.
-    - Nullspace and rowspace are orthogonal COMPLEMENTS in R(n) 等价于 Nullspace contains ALL vectors perpenticular to rowspace.
-    - Idea of "best solve" Ax=b when there is no solution.
-    - The importance of $A^TA$
+  - (xT)(y) = dot product = 0 : x and y are orthoganal vector.
+  - Row space is orthogonal to null space, why? Think about orthogonal definition: dot product of 2 vectors equals 0.
+  - Nullspace and rowspace are orthogonal COMPLEMENTS in R(n) 等价于 Nullspace contains ALL vectors perpenticular to rowspace.
+  - Idea of "best solve" Ax=b when there is no solution.
+  - The importance of $A^TA$
 - Lec 15: IMMORTAL
-    - Projections: $\mathbf{p}=\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
-    - Projection Matrix: $\mathbf{p} = P \mathbf{b}$, $P=\frac{\mathbf{aa^T}}{\mathbf{a^T a}}$
-       - C(P) is the line through a, Rank(P)=1
-       - P is symmetric
-       - $P^2=P$
-    - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
-    - The Projection Matrix for high dimention
+  - Projections: $\mathbf{p}=\mathbf{a}\frac{\mathbf{a^T b}}{\mathbf{a^T a}}$
+  - Projection Matrix: $\mathbf{p} = P \mathbf{b}$, $P=\frac{\mathbf{aa^T}}{\mathbf{a^T a}}$
+    - C(P) is the line through a, Rank(P)=1
+    - P is symmetric
+    - $P^2=P$
+  - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
+  - The Projection Matrix for high dimention
 - Lec 16:
-    - Least Squares: $A^T Ax = A^T b$, 大前提：A is Column Full Rank.
-    - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
+  - Least Squares: $A^T Ax = A^T b$, 大前提：A is Column Full Rank.
+  - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
 - Lec 17:
-    - Orthogonal basis: $q_i^T q_j=$
-    - Orthogonal matrix: $Q^T Q$
-    - Graham and Schmidt
+  - Orthogonal basis: $q_{i}^{T} q_j=$
+  - Orthogonal matrix: $Q^T Q$
+  - Graham and Schmidt
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
