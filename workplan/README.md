@@ -92,8 +92,8 @@ Current:
        - $P^2=P$
     - Why project? Because Ax=b may have no solution, we solve Ax=p where p is the the projection of b onto the Col space.
     - The Projection Matrix for high dimention
-    - Least Squares
  - Lec 16:
+    - Least Squares: $A^T Ax = A^T b$
        
 
 ---
