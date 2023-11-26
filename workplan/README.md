@@ -106,7 +106,7 @@ Current:
   - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
 - Lec 17:
   - Orthogonal basis: $q_{i}^{T} q_{j}=(0, i\ne j\ or\ 1, i=j)$
-  - Orthogonal matrix: $Q^T Q$
+  - Orthogonal matrix: $Q^T Q=I$, specially for unknown reason, Q is square matrix and Q's columns are unit vectors.
   - Graham and Schmidt:
 
 ---
