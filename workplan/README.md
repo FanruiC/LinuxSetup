@@ -116,7 +116,7 @@ Current:
 - [ ] Test on rough mesh for parameter analysis first then apply to fine mesh.
 - [ ] Investigate the influence of forced Womersley BCs on flows at bend. Especially when Re is high and probabally need a longer straight section.
 - [ ] Investigate the influence of using a Sponge at both inlet and outlet, checking for any difference occurs at bend.
-## 26 Nov
+## 26 Nov 23
 - [ ] Steam 秋促购买
 - [ ] 行李箱x2
 - [x] 购买保健品
