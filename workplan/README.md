@@ -98,7 +98,7 @@ Current:
  - Lec 17:
     - Orthogonal basis:
 $$
-q_{i}^{T} q_{j}=
+q_i^T q_j=
 
 $$
     - Orthogonal matrix: $Q^T Q$
