@@ -12,7 +12,9 @@ $$
   1 & a_m & a_m^2 & \cdots & a_m^n \\
   \end{pmatrix}
 $$
+
 $$q_{i}^{T} q_{j}=\{\begin{matrix}0, i\ne j \\1, i =  j\end{matrix}$$
+
 ## 15 Nov 23
 Previous:
 - [ ] DMD, SVD introduction
