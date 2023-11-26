@@ -35,44 +35,44 @@ Current:
   - Permutation Matrices. How many?
   - 初等 Elimination matrices 的逆非常好求 
 - Lec 3:
-    - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
-    - Inverses: why 一个矩阵没有逆？两种令人启发的解释
-    - 求逆和解一系列的线性方程组一致，we're back to Gauss, and Jordan comes in. E[A I] = [EA EI] = [I A^-1]
+  - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
+  - Inverses: why 一个矩阵没有逆？两种令人启发的解释
+  - 求逆和解一系列的线性方程组一致，we're back to Gauss, and Jordan comes in. E[A I] = [EA EI] = [I A^-1]
 - Lec 4:
-    - A,B are invertible, (AB)的逆等于什么？ What's the inverse of A transpose?
-    - If A is invertible, and no permutation matrice is needed, then EA = U, and E is lower triangular, then A = LU
-    - LU = LDU, 一种行乘的理解迅速分解U求出DU
-    - Lower triagnal means we are doing minus only row by row to the bottom. Why A=LU is better than EA=U? Try on a 4x4 example.
-    - How many operations for LU decomposition for computer?
-    - How many permutation matrices for a nxn square matrix? Answer: A(n,n)
+  - A,B are invertible, (AB)的逆等于什么？ What's the inverse of A transpose?
+  - If A is invertible, and no permutation matrice is needed, then EA = U, and E is lower triangular, then A = LU
+  - LU = LDU, 一种行乘的理解迅速分解U求出DU
+  - Lower triagnal means we are doing minus only row by row to the bottom. Why A=LU is better than EA=U? Try on a 4x4 example.
+  - How many operations for LU decomposition for computer?
+  - How many permutation matrices for a nxn square matrix? Answer: A(n,n)
 - Lec 5:
-    - Inverse of a permutation matix is it's transpose.
-    - R 和 R 的转置相乘总能得到对称矩阵。
-    - Defination of subspaces.
+  - Inverse of a permutation matix is it's transpose.
+  - R 和 R 的转置相乘总能得到对称矩阵。
+  - Defination of subspaces.
 - Lec 6: From definition to algorithm
-    - Column subspace of A in R(m). Ax=b 有解的条件
-    - Null subspace of A in R(n).
-    - Ax=b 的解构成子空间吗？
+  - Column subspace of A in R(m). Ax=b 有解的条件
+  - Null subspace of A in R(n).
+  - Ax=b 的解构成子空间吗？
 - Lec 7: Solving Ax=0
-    - row echelon form, Solving Ax=0, Pivots columns, Free columns. Pivot variables and Free variables. 通解是由free variable 个数的特解的线性组合构成的。
-    - reduced row echelon form (RREF), 分块矩阵I,F用于快速求解特解（Null space's basis）！
+  - row echelon form, Solving Ax=0, Pivots columns, Free columns. Pivot variables and Free variables. 通解是由free variable 个数的特解的线性组合构成的。
+  - reduced row echelon form (RREF), 分块矩阵I,F用于快速求解特解（Null space's basis）！
 - Lec 8: Solving Ax=b
-    -  Solvability condition on b: Ax=b solvable when b in C(A) 等价于 If a conbination of rows of A gives 0 rows, then same combination of entries of b must give 0.
-    -  Particular solution by setting free variables to 0.
-    -  If I have a particular solution xp, I can add this vector with any vectors in null space, xn, the right hand side wouldn't change.
-    -  m, n, r relation. Full column rank, Full row rank. RANK tells everything about the number of solutions.
+  - Solvability condition on b: Ax=b solvable when b in C(A) 等价于 If a conbination of rows of A gives 0 rows, then same combination of entries of b must give 0.
+  - Particular solution by setting free variables to 0.
+  - If I have a particular solution xp, I can add this vector with any vectors in null space, xn, the right hand side wouldn't change.
+  - m, n, r relation. Full column rank, Full row rank. RANK tells everything about the number of solutions.
        |r=m=n|r=n<m|r=m<n|r<m,r<n|
        |:---:|:---:|:---:|:---:|
        |1 solution|0 or 1 solution|infinite solution|0 or infinite solution|
 - Lec 9: Basis, Dimension, independency
 - Lec 10: Four subspaces that come from a matrix A(m x n) with rank r
-    - |Name     |Column Space C(A)|Null Space N(A)|Raw Space C(AT)|LeftNull Space N(AT)|
-      |:---:    |:---:            |:---:          |:---:                            |:---:               |
-      |In       |R(m)             |R(n)           |R(n)                             |R(m)                |
-      |Dimension|r                |n-r            |r                                |m-r                 |
-      |Basis    |Pivot Cols       |Special solu's |Pivot Rows / First r rows of rref|EA = R, through E   |
+  - |Name     |Column Space C(A)|Null Space N(A)|Raw Space C(AT)|LeftNull Space N(AT)|
+    |:---:    |:---:            |:---:          |:---:                            |:---:               |
+    |In       |R(m)             |R(n)           |R(n)                             |R(m)                |
+    |Dimension|r                |n-r            |r                                |m-r                 |
+    |Basis    |Pivot Cols       |Special solu's |Pivot Rows / First r rows of rref|EA = R, through E   |
       
-    - 广义的 Vector Spaces
+  - 广义的 Vector Spaces
  - Lec 11: Rank 1 matrices
     - Rank 1 matrices are the building blocks for big matrices. Can be written as the multiplication of a col vector times row vector.
  - Lec 12: Skip
