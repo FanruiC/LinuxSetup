@@ -106,6 +106,7 @@ Current:
   - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
 - Lec 17:
   - Orthogonal basis:
+
 $$
 q_{i}^{T} q_{j}=\left\\{
 \begin{matrix}
@@ -114,8 +115,10 @@ q_{i}^{T} q_{j}=\left\\{
 \end{matrix}
 \right\\}
 $$
+
   - Orthogonal matrix: $Q^T Q$
   - Graham and Schmidt
+
 $$
 q_{i}^{T} q_{j}=\left\\{
 \begin{matrix}
@@ -124,6 +127,7 @@ q_{i}^{T} q_{j}=\left\\{
 \end{matrix}
 \right\\}
 $$
+
 ---
 $$
 q_{i}^{T} q_{j}=\left\\{
