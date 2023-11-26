@@ -31,9 +31,9 @@ Current:
  ### Gilbert Strang Linear Algebra Contents:
 - Lec 1: Row Picture (画图求交点，直接看出结果) / Colume Picture （画向量，估计可能的线性组合得到目标向量）
 - Lec 2:
- - Gauss elimination matrices. 一个矩阵右乘和左乘 向量/矩阵 的区别 (左：行的线性组合得到新的行；右：列的线性组合得到新的列).
- - Permutation Matrices. How many?
- - 初等 Elimination matrices 的逆非常好求 
+  - Gauss elimination matrices. 一个矩阵右乘和左乘 向量/矩阵 的区别 (左：行的线性组合得到新的行；右：列的线性组合得到新的列).
+  - Permutation Matrices. How many?
+  - 初等 Elimination matrices 的逆非常好求 
 - Lec 3:
     - Four ways to do matrix multiplication: 单个元素/行法/列法/分块法
     - Inverses: why 一个矩阵没有逆？两种令人启发的解释
