@@ -106,7 +106,8 @@ Current:
   - Definition of ORTHONOMAL VECTORS: a set of unit vectors that are perpendicular to each other
 - Lec 17:
   - Orthogonal basis: $q_{i}^{T} q_{j}=(0, i\ne j\ or\ 1, i=j)$
-  - Orthogonal matrix: $Q^T Q=I$, specially for unknown reason, Q is by default square matrix and Q's columns are unit vectors. So $Q^{-1} = Q^T$
+  - Orthogonal matrix: $Q^T Q=I$, specially for unknown reason, Q is by default square matrix and Q's columns are unit vectors. So $Q^{-1} = Q^T$.
+    好处：如果A的列向量是orthonomal vecotrs, 则投影到A的Projection Matrix $P=QQ^T$
   - Graham and Schmidt:
 
 ---
