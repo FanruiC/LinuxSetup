@@ -22,12 +22,7 @@ q_{i}^{T} q_{j}=\left\\{
 \right\\}
 $$
 
-$q_{i}^{T} q_{j}=\left\\{
-\begin{matrix}
-0, i\ne j \\
-1, i =  j \\
-\end{matrix}
-\right\\}$
+$q_{i}^{T} q_{j}=\left\\{\right\\}$
 
 ## 15 Nov 23
 Previous:
