@@ -116,7 +116,7 @@ Current:
     - subtract l x row(i) from row k doesn't change det(A)
     - Zero row means det(A)=0
     - det(AB)=det(A)det(B)
-    - $det(2A)=2^n det(A)
+    - $det(2A)=2^n det(A)$
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
