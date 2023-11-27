@@ -109,8 +109,12 @@ Current:
   - Orthogonal matrix: $Q^T Q=I$, specially for unknown reason, Q is by default square matrix and Q's columns are unit vectors. So $Q^{-1} = Q^T$.
     好处：如果A的列向量是orthonomal vecotrs, 则投影到A的Projection Matrix $P=QQ^T$. And this way: $x_{leastsquered} = Q^T b$, which means: $x_i = q_i^T b$
   - Graham and Schmidt: A=QR, 是QR分解的基本技术，数值上有多种更优秀的QR分解算法。
-- Lec 18：Determinant
-  -
+- Lec 18：Determinant, for eigenvalues.
+  - Properties: 
+    - det(I)=1
+    - Row exchange reverse the sign of det(A)
+    - subtract l x row(i) from row k doesn't change det(A)
+    - Zero row means det(A)=0
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
