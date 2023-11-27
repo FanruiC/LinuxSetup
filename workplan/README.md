@@ -26,7 +26,7 @@ $$
 Previous:
 - [ ] DMD, SVD introduction
 - [ ] Barkley_Blackburn_Sherwin , Direct optimal growth analysis for timesteppers.
-
+2
 Current:
 - [ ] Complete dynamical system course: [微分方程和动力系统 Differential Equations and Dynamical Systems]( https://www.bilibili.com/video/BV13e411N7Vt/?p=32&share_source=copy_web&vd_source=c7625a8fd7a15d5783e3cc2650543d45)
 - [ ] Review, Fluid Mechanics
@@ -118,6 +118,9 @@ Current:
     - det(AB)=det(A)det(B)
     - $det(2A)=2^n det(A)$
     - $det(A)=det(A^T)$
+- Lec 19: Determinant Calculation using cofactors.
+- Lec 20: Determinant Application
+  - $x=A^-1 b=\frac{1}{det(A)}C^T b$   
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
