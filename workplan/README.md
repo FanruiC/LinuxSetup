@@ -123,7 +123,7 @@ Current:
   - $x=A^{-1}b=\frac{1}{det(A)}C^T b$ Cramer rules, 中看不中用
   - det(A) Its absolute number is the volume of the "box", its sign says it's a right-handed box or a left-handed box
 - Lec 21: Eigenvalues-Eigenvectors
-  - $Ax = \lamda v$
+  - $Ax = \lambda x$
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
