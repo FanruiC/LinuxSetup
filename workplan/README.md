@@ -120,7 +120,7 @@ Current:
     - $det(A)=det(A^T)$
 - Lec 19: Determinant Calculation using cofactors.
 - Lec 20: Determinant Application
-  - $x=A^-1 b=\frac{1}{det(A)}C^T b$   
+  - $x=A^{-1}b=\frac{1}{det(A)}C^T b$   
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
