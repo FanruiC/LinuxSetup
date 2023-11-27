@@ -125,6 +125,7 @@ Current:
 - Lec 21: Eigenvalues-Eigenvectors
   - $Ax = \lambda x$, N-order square matrix must have n eigenvalues.
   - $det(A-\lambda I)=0$
+  - $Ax=\lambda x$ and $(A+3I)x=(\lambda + 3)x$
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
