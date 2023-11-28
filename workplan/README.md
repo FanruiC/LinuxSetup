@@ -146,6 +146,13 @@ Current:
 - [ ] Test on rough mesh for parameter analysis first then apply to fine mesh.
 - [ ] Investigate the influence of forced Womersley BCs on flows at bend. Especially when Re is high and probabally need a longer straight section.
 - [ ] Investigate the influence of using a Sponge at both inlet and outlet, checking for any difference occurs at bend.
+## 28 Nov 23 Justing Richard Meeting
+- [ ] A/D could be from small to large eg. 0.1 - 10
+- [ ] Relationship to $Re_\delta$
+- [ ] Poincare map
+- [ ] Quasiperiodic?
+- [ ] Standing waves, traveling waves in fluids?
+- [ ] Richard: High order modes don't feed back? Absorbing low frequency energy?
 ## 26 Nov 23
 - [x] Steam 秋促购买
 - [ ] 行李箱x2
