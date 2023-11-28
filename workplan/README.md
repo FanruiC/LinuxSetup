@@ -156,12 +156,12 @@ Current:
 ## 28 Nov 23 Justing Richard Meeting
 - [ ] A/D could be from small to large eg. 0.1 - 10
 - [ ] Relationship to $Re_\delta$
-      - Re_max, Re_omega, Re_delta are related to each other. Only two independent dimensionless parameter needed.
+  - Re_max, Re_omega, Re_delta are related to each other. Only two independent dimensionless parameter needed.
 - [ ] Poincare map
 - [ ] Quasiperiodic?
 - [ ] Standing waves, traveling waves in fluids?
 - [ ] Richard: High order modes don't feed back? Absorbing low frequency energy?
-      - By running linear stability, we ignore any non-linear(High order terms, high order modes), we've got a low frequency mode(f=0.022), it may have potential to used as absorbing long period wave energy in ocean.
+  - By running linear stability, we ignore any non-linear(High order terms, high order modes), we've got a low frequency mode(f=0.022), it may have potential to used as absorbing long period wave energy in ocean.
 - [ ] Running stabnek by:
-      - start from snapshot 100, the start from 110, 120,... we expect a mode structure change. Eigenvalue and eigenvectors are not changing. But the leading mode has a phase, and we are extracting its real part so it woud change.
+  - start from snapshot 100, the start from 110, 120,... we expect a mode structure change. Eigenvalue and eigenvectors are not changing. But the leading mode has a phase, and we are extracting its real part so it woud change.
       
