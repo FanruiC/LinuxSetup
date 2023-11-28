@@ -146,13 +146,6 @@ Current:
 - [ ] Test on rough mesh for parameter analysis first then apply to fine mesh.
 - [ ] Investigate the influence of forced Womersley BCs on flows at bend. Especially when Re is high and probabally need a longer straight section.
 - [ ] Investigate the influence of using a Sponge at both inlet and outlet, checking for any difference occurs at bend.
-## 28 Nov 23 Justing Richard Meeting
-- [ ] A/D could be from small to large eg. 0.1 - 10
-- [ ] Relationship to $Re_\delta$
-- [ ] Poincare map
-- [ ] Quasiperiodic?
-- [ ] Standing waves, traveling waves in fluids?
-- [ ] Richard: High order modes don't feed back? Absorbing low frequency energy?
 ## 26 Nov 23
 - [x] Steam 秋促购买
 - [ ] 行李箱x2
@@ -160,3 +153,15 @@ Current:
 - [ ] 侯叔叔，琳爸妈爷奶，others
 - [x] 购买电话卡
 - [ ] 租房选择
+## 28 Nov 23 Justing Richard Meeting
+- [ ] A/D could be from small to large eg. 0.1 - 10
+- [ ] Relationship to $Re_\delta$
+      - Re_max, Re_omega, Re_delta are related to each other. Only two independent dimensionless parameter needed.
+- [ ] Poincare map
+- [ ] Quasiperiodic?
+- [ ] Standing waves, traveling waves in fluids?
+- [ ] Richard: High order modes don't feed back? Absorbing low frequency energy?
+      - By running linear stability, we ignore any non-linear(High order terms, high order modes), we've got a low frequency mode(f=0.022), it may have potential to used as absorbing long period wave energy in ocean.
+- [ ] Running stabnek by:
+      - start from snapshot 100, the start from 110, 120,... we expect a mode structure change. Eigenvalue and eigenvectors are not changing. But the leading mode has a phase, and we are extracting its real part so it woud change.
+      
