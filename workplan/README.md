@@ -126,6 +126,13 @@ Current:
   - $Ax = \lambda x$, N-order square matrix must have n eigenvalues.
   - $det(A-\lambda I)=0$
   - $Ax=\lambda x$ and $(A+3I)x=(\lambda + 3)x$
+- Lec 22: Diagnal, Power
+  - 差分方程！非波那且数列
+- Lec 23：
+  - 微分方程！复指数
+  - 2 dimension 系统的稳定性部分解读。
+  - 线性动态系统解耦
+- Lec 24：
 ---
 - [ ] Gilbert Strang 同时教授[这些课程](https://ocw.mit.edu/search/?q=Prof.+Gilbert+Strang)
 ## 20 Nov 23
@@ -164,4 +171,8 @@ Current:
   - By running linear stability, we ignore any non-linear(High order terms, high order modes), we've got a low frequency mode(f=0.022), it may have potential to used as absorbing long period wave energy in ocean.
 - [ ] Running stabnek by:
   - start from snapshot 100, the start from 110, 120,... we expect a mode structure change. Eigenvalue and eigenvectors are not changing. But the leading mode has a phase, and we are extracting its real part so it woud change.
+
+## 29 Nov 23
+- [ ] Nek里的eigenvalue和微分方程里的eigenvalue如何转变？
+- [ ] 
       
