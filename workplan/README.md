@@ -174,5 +174,5 @@ Current:
 
 ## 29 Nov 23
 - [ ] Nek里的eigenvalue和微分方程里的eigenvalue如何转变？
-- [ ] 
+- [ ] Learn how OFC controls the linux FAN speeds.
       
