@@ -232,3 +232,7 @@ Exec=env GTK_THEME=Default bash -c "............
 ```
 awk '!seen[$0]++' 文件名 > 新文件名
 ```
+### Default fan speed is noisee in linux
+refer to [OpenFreezeCenter](https://github.com/YoCodingMonster/OpenFreezeCenter), which is good.
+
+refer to [OpenFreezeCenter]()
