@@ -234,3 +234,8 @@ awk '!seen[$0]++' 文件名 > 新文件名
 ```
 ### Default fan speed is noisee in linux
 refer to [OpenFreezeCenter](https://github.com/YoCodingMonster/OpenFreezeCenter), which is good.
+EC Fan speed points vs Temporature curve(could be cpu package temp)
+| CPU |     |     |     |     |     |     |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|P1   |P2   |P3   |P4   |P5   |P6   |P7   |
+|-?|?-?|?-55C?|?55C-?|?-?|70C-?|?-|
