@@ -234,7 +234,7 @@ awk '!seen[$0]++' 文件名 > 新文件名
 
 or
 
-awk '/energy/ && !seen[\$0]++' outfile > energy.his
+awk '/energy/ && !seen[$0]++' outfile > energy.his
 ```
 ### Default fan speed is noisee in linux
 refer to [OpenFreezeCenter](https://github.com/YoCodingMonster/OpenFreezeCenter), which is good.
