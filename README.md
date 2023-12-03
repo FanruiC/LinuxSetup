@@ -228,13 +228,16 @@ cd ~./local/share/application
 vim zotero.desktop
 Exec=env GTK_THEME=Default bash -c "............
 ```
-### 怎么提取文件中的某些行：
+### 怎么提取文件中的某些行,并绘图：
 ```
 awk '!seen[$0]++' 文件名 > 新文件名
 
 or
 
 awk '/energy/ && !seen[$0]++' outfile > energy.his
+```
+```
+plot "file.txt" every 10::100 using 5:4 with lines
 ```
 ### Default fan speed is noisee in linux
 refer to [OpenFreezeCenter](https://github.com/YoCodingMonster/OpenFreezeCenter), which is good.
