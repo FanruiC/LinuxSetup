@@ -265,4 +265,5 @@ sudo apt install python3
 sudo apt install --reinstall kubuntu-desktop
 启动后可以进入tty7（图形界面）但无法使用鼠标键盘
 sudo apt install xserver-xorg-input-all
+某些以来系统python的包在运行sudo apt autoremove后丢失，需要重新安装
 ```
