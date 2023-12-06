@@ -251,3 +251,18 @@ EC Fan speed points vs Temporature curve(could be cpu package temp)
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |P1   |P2   |P3   |P4   |P5   |P6   |P7   |
 |-?|?-?|?-?|?-?|?-?|?-?|?-|
+### 在Womersley 流动中，如何从reci.his判断流动已经收敛到稳态？
+```
+自行修改start和start+x的数值
+start=6; while awk "NR>=$start && NR<=$start+3" reci.his; do start=$((start + 400)); done
+```
+### Kubuntu桌面在删除系统python3之后无法载入：
+```
+进入tty1 命令行模式：
+nmtui 来启动简单图形页面的wifi网络连接器
+sudo apt update
+sudo apt install python3
+sudo apt install --reinstall kubuntu-desktop
+启动后可以进入tty7（图形界面）但无法使用鼠标键盘
+sudo apt install xserver-xorg-input-all
+```
