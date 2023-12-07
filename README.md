@@ -94,7 +94,8 @@ sudo apt install build-essential  #provides gcc
 sudo apt install gfortran         #provides gfortran
 sudo apt install libopenmpi-dev   #provides openmpi
 ```
-> This is an auto way to install openmpi, need to configure compiling flags for eg. slatec etc.
+> This is an auto way to install openmpi, need to configure compiling-flags in makenek for eg. slatec etc.
+> WARNING: ParaView's mpiexec may impact systems mpiexec in PATH.
 #### libslatec & liblapack
 Download and install slatec and lapack from [NETLIB](www.netlib.org)
 > lapack is needed for slatec
@@ -179,7 +180,7 @@ But, to set the above option, we MUST install external GDAL library by:
 sudo apt install libgdal-dev
 ```
 Then we can build and run paraview to read NEK5000 properly.
-
+> Note that paraview has its own mpiexec binary in ../paraview/bin folder.
 ### code
 
 ## Issues Fix
