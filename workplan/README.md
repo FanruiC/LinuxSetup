@@ -175,4 +175,8 @@ Current:
 ## 29 Nov 23
 - [ ] Nek里的eigenvalue和微分方程里的eigenvalue如何转变？
 - [ ] Learn how OFC controls the linux FAN speeds.
-      
+## 08 Dec 23 Justing Meeting ACCM Preparation
+Notes and inspirations:
+- Something called the Rehynolds Orr equation will tell you regions of where you would expect to see perturbation growth.
+> Okay, this is what we've found. You can see where the mode is growing, and it's focused in these regions. Those regions correspond with these big Dean vortices that are coming from the centripetal instability. And what we're finding is that it's not synchronous. So there's a deviation in the flow that causes a second frequency at a much lower frequency. So it repeats it over eight cycles. If we look at that over sampling once per period, we can see that the structure is slightly shifting. I think that's basically it. The only thing that you would add to that, I guess, is some description of what would you expect to see then. What is that predicting? I guess it's saying, well, what you would predict to see is that the periodic flow first loses stability to a low frequency. Either growth and decay, or there's some kind of slow sloshing backwards and forwards. 
+- 
