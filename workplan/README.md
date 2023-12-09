@@ -185,4 +185,6 @@ Notes and inspirations:
 
 > I'm always thinking about, okay, where could we be criticized? What could we have missed? What could people say? And I guess one thing that they might sort of say is, oh, look, that frequency is really low. Maybe it's supposed to be zero. You know, maybe the frequency is trying to become, you know, it's a real, it's a mode that's actually synchronous. But I don't think that's the case, right, because the actual values of the Floquet multipliers that you calculate, the complex components aren't near zero, are they? They're quite large. So, yeah, so I think it's looking good. Yeah, is it good to present the evolution of the perturbation field or not necessary? Yeah, look, it's up to you. If you think you've got time, then I would show it, yeah. I found out a phenomenon here. This is the perturbation evolution. It is similar to the leading mode we get at time zero. But at time, the next same phase of the next cycle, we get. It changes a lot. It changes a lot. But, yeah, it changes a lot. And until we get, yeah, it changes quite a lot. And until we get 115, that is 15th cycle, it comes back. Almost exactly where it was, but bigger. Yeah, but bigger. Because it's growing. So what you could do is renormalize each frame to take the growth away, just to see the variation over time.
 
-- [] Build Stabilization tools for solving base.
+- [ ] Build Stabilization tools for solving base.
+## 09 Dec 23
+- POD, DMD, SVD, FFT from Justin's signal processing course.
