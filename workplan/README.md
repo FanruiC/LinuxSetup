@@ -188,4 +188,4 @@ Notes and inspirations:
 - [ ] Build Stabilization tools for solving base.
 ## 09 Dec 23
 - POD, DMD, SVD, FFT from Justin's signal processing course.
-- My ChatGPT-Next was deployed on [Vercel] (vercel.com), domains on [Namesilo](https://www.namesilo.com)
+- My ChatGPT-Next was deployed on [Vercel](https://vercel.com), domains on [Namesilo](https://www.namesilo.com)
