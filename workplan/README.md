@@ -189,3 +189,5 @@ Notes and inspirations:
 ## 09 Dec 23
 - POD, DMD, SVD, FFT from Justin's signal processing course.
 - My ChatGPT-Next was deployed on [Vercel](https://vercel.com), domains on [Namesilo](https://www.namesilo.com)
+## 14 Dec 23
+- tested a new 2d cyl model with new mesh, the nekmodes.py seems not working at all for this case, need to check and find out the difference between Floquet and Simple Linear Stability Analysis.
