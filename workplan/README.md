@@ -155,11 +155,11 @@ Current:
 - [ ] Investigate the influence of using a Sponge at both inlet and outlet, checking for any difference occurs at bend.
 ## 26 Nov 23
 - [x] Steam 秋促购买
-- [ ] 行李箱x2
+- [x] 行李箱x2
 - [x] 购买保健品
-- [ ] 侯叔叔，琳爸妈爷奶，others
+- [x] 侯叔叔，琳爸妈爷奶，others
 - [x] 购买电话卡
-- [ ] 租房选择
+- [x] 租房选择
 ## 28 Nov 23 Justing Richard Meeting
 - [ ] A/D could be from small to large eg. 0.1 - 10
 - [ ] Relationship to $Re_\delta$
@@ -191,3 +191,9 @@ Notes and inspirations:
 - My ChatGPT-Next was deployed on [Vercel](https://vercel.com), domains on [Namesilo](https://www.namesilo.com)
 ## 14 Dec 23
 - tested a new 2d cyl model with new mesh, the nekmodes.py seems not working at all for this case, need to check and find out the difference between Floquet and Simple Linear Stability Analysis.
+## 07 Feb 24
+## 22 Feb 24
+- Joint paper for International Conference on Ocean Energy, Richard & Justin
+  -
+  -
+  
