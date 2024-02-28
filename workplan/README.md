@@ -196,7 +196,11 @@ Notes and inspirations:
 - Joint paper for International Conference on Ocean Energy, Richard & Justin
 ## 28 Feb 24
 - Property Inspections
-  - [ ]  29th Thu 9:30am 29/168 Power st. Hawthorn type: 211 Buxton $625
-  - [ ]  29th Thu 2:30pm 10/578 Glenferrie Rd. Hawthorn type: 211 JellisCraig $525
-  - [ ]  2nd Sat 11:00am 308/9 Montrose st. Hawthorn type: 111 A/real $525
-  - [ ]  2nd Sat 10:00am 205/8 Queens Ave. Hawthorn type: 111 A/real $525
+  - [ ] 29th Thu 9:30am 29/168 Power st. Hawthorn type: 211 Buxton $625
+  - [ ] 29th Thu 2:30pm 10/578 Glenferrie Rd. Hawthorn type: 211 JellisCraig $525
+  - [ ] 2nd Sat 11:00am 308/9 Montrose st. Hawthorn type: 111 A/real $525
+  - [ ] 2nd Sat 10:00am 205/8 Queens Ave. Hawthorn type: 111 A/real $525
+- Property applied
+  - [ ] Snug: 401/1 Cook Street, Hawthorn. 111 $550
+  - [ ] 2apply: 203/1A Launder St. Hawthorn. 211 $575
+  - [ ] 
