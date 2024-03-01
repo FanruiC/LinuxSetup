@@ -198,13 +198,13 @@ Notes and inspirations:
 - Property Inspections
   - [x] 29th Thu 9:30am 29/168 Power st. Hawthorn type: 211 Buxton $625
   - [ ] 29th Thu 2:30pm 10/578 Glenferrie Rd. Hawthorn type: 211 JellisCraig $525 Realestate/Tenantapp
-  - [ ] 1st Fri 12:15pm 102/7 Montrose st. Hawthorn east type:?
+  - [ ] 2nd Sat 12:15pm 102/7 Montrose st. Hawthorn east type:?
   - [ ] 2nd Sat 11:00am 308/9 Montrose st. Hawthorn type: 111 A/real $525 Realestate/Tenantapp
   - [ ] 2nd Sat 10:00am 205/8 Queens Ave. Hawthorn type: 111 A/real $525 
   - [ ] 2nd Sat 9:30am 29/168 Power st. Hawthorn type: 211 Buxton $625 Realestate
   - [ ] 2nd Sat 12:15am 41/589 Glenferrie Rd. Hawthorn type:?
   - [ ] 5nd Tue 12:00pm 506/25 Lynch st. Hawthorn type:?
 - Property applied
-  - [ ] Snug: 401/1 Cook Street, Hawthorn. 111 $550
+  - [x] Snug: 401/1 Cook Street, Hawthorn. 111 $550
   - [x] 2apply: 203/1A Launder St. Hawthorn. 211 $575 Woodproperty
   - [ ] 
