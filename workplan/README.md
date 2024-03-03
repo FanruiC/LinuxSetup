@@ -209,6 +209,7 @@ Notes and inspirations:
   - [x] 2apply: 203/1A Launder St. Hawthorn. 211 $575 Woodproperty
 ## 01 Mar 24 Meeting with Justin Minutes
 Stabilising periodic orbits
+
 $$
 \frac{\partial \mathbf{u} }{\partial t} = -(\mathbf{u}\cdot\nabla)\mathbf{u} - \nabla P + \frac{1}{Re}
 \nabla^{2}\mathbf{u}+\mathbf{Ac}  
