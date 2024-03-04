@@ -210,10 +210,8 @@ Notes and inspirations:
 ## 01 Mar 24 Meeting with Justin Minutes
 Stabilising periodic orbits
 
-$$
-\frac{\partial \mathbf{u} }{\partial t} = -(\mathbf{u}\cdot\nabla)\mathbf{u} - \nabla P + \frac{1}{Re}
-\nabla^{2}\mathbf{u}+\mathbf{Ac}  
-$$
+$$ \frac{\partial \mathbf{u} }{\partial t} = -(\mathbf{u}\cdot\nabla)\mathbf{u} - \nabla P + \frac{1}{Re}\nabla^{2}\mathbf{u}+\mathbf{Ac} $$
+$$ Ac = \Gamma (\mathbf{u^{t-T} - \mathbf{u}^t}) $$
 
 
 
