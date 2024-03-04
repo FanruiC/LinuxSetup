@@ -213,7 +213,7 @@ $\frac{\partial \mathbf{u} }{\partial t} = -(\mathbf{u}\cdot\nabla)\mathbf{u} - 
 $Ac = \Gamma (\mathbf{u^{t-T} - \mathbf{u}^t})$  
 Tests on a smaller non-linear system: two duffing oscillators coupled via a linear spring:
 > The Duffing oscillator is a non-linear second-order differential equation that describes the motion of a damped oscillator with a more complex potential than in simple harmonic motion (i.e., it includes a non-linear restoring force). When we have two such oscillators coupled by a linear spring, the equations of motion become more complex due to the interaction between the two systems. The equations of motion for two coupled Duffing oscillators can be written as:
-
+> 
 > $\ddot{x_{1}}+ \delta\dot{x_{1}}+ \alpha x_{1}+ \beta x_{1}^3+ k(x_{1}-x_{2}) = \gamma cos(\omega t)$
 >
 > $\ddot{x_{2}}+ \delta\dot{x_{2}}+ \alpha x_{2}+ \beta x_{2}^3+ k(x_{2}-x_{1}) = \gamma cos(\omega t)$
