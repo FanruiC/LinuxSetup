@@ -218,8 +218,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 >
 > $\ddot{x_{2}}+ \delta\dot{x_{2}}+ \alpha x_{2}+ \beta x_{2}^3+ k(x_{2}-x_{1}) = \gamma cos(\omega t)$
 ## 26 Mar 24
-- [ ] Reorganize the desktop and import data from the old laptop
+- [x] Reorganize the desktop and import data from the old laptop
 - [ ] Summarize learing progress and organize study materials
-- [ ] Finalise house moving stuff- change address, documentations.
+- [x] Finalise house moving stuff- change address, documentations.
 
  
