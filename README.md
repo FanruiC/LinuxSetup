@@ -185,8 +185,55 @@ sudo apt install libgdal-dev
 ```
 Then we can build and run paraview to read NEK5000 properly.
 > Note that paraview has its own mpiexec binary in ../paraview/bin folder.
-### code
+### vscode
+vscode's modern fortran extension provides two debuger ways: released vs pre-released. For released version: need to configure launch.json and tasks.json. eg:
+```
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
 
+    {
+      "name": "(gdb) fortran",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/a.out",
+      "args": [], // Possible input args for a.out
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true,
+        },
+      ],
+      "preLaunchTask": "gfortran_build"
+    },
+  ],
+}
+```
+```
+{
+      // See https://go.microsoft.com/fwlink/?LinkId=733558
+      // for the documentation about the tasks.json format
+      "version": "2.0.0",
+      "tasks": [
+            {
+                  "label": "gfortran_build",
+                  "type": "shell",
+                  "command": "gfortran ${file} -lslatec -llapack -g"
+            }
+      ]
+}
+```
+For pre-release version: there is a button at the top right which can compile and run the code using its "default build command" (Have not idea how to change this setting), which wouldn't work
+to compile with slatec and lapack.
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
