@@ -120,6 +120,7 @@ When compiling slatec, add to FFLAGS
 -std=legacy
 ```
 > std=legacy implies -fallow-argument-mismatch. See [GCC GNU POST](https://gcc.gnu.org/onlinedocs/gfortran/Fortran-Dialect-Options.html)
+
 Add -v during compiling to show full information and logs, useful when need to check the ld linkage paths. Add libslatec.a to these location to avoid using -L args.
 We must compile the source code first, then adding -lslatec and -llapack in the end. Otherwise the ld cannot find the correct references for functions and routines in sources.
 
