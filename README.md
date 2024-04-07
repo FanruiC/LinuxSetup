@@ -124,6 +124,13 @@ When compiling slatec, add to FFLAGS
 Add -v during compiling to show full information and logs, useful when need to check the ld linkage paths. Add libslatec.a to these location to avoid using -L args.
 We must compile the source code first, then adding -lslatec and -llapack in the end. Otherwise the ld cannot find the correct references for functions and routines in sources.
 
+Slatec on netlib.org has changed its order. Src file has been devided into src, lin, fishfft, fnlib, pchip intotal five libraries, thich contains intotal 1441 .f routines. Need to run:
+```
+wget -r -np -nH --cut-dirs=2 https://www.netlib.org/slatec/fnlib/
+
+```
+to download all the .f files then can be compiled.
+
 #### Benchmark
 simple curved pipe 500 steps time:
 - 4 p-cores
