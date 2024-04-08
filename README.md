@@ -326,3 +326,20 @@ sudo apt install --reinstall kubuntu-desktop
 sudo apt install xserver-xorg-input-all
 某些以来系统python的包在运行sudo apt autoremove后丢失，需要重新安装
 ```
+### Nek5000的P bc在element比较少时候无法启动(至少3层是无法启动，4层可以)，报错：
+```
+    0  ERROR:  Vanishing Jacobian near      2th node of element         5.
+   5.1923076878325298E-003  -2.4692660769353551E-003
+
+
+    1  ERROR:  Vanishing Jacobian near      2th node of element         4.
+
+
+    2  ERROR:  Vanishing Jacobian near      2th node of element         1.
+
+
+    3  ERROR:  Vanishing Jacobian near      3th node of element        18.
+   1.8550712909060595E-002  -5.0360301079851247E-003
+
+```
+解决方法：加密P方向的element numnber
