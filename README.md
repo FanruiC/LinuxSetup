@@ -1,7 +1,7 @@
 # LinuxSetup for MSI
 From Bilibili: [8分钟让你快速掌握Markdown](https://www.bilibili.com/video/BV1JA411h7Gw/?spm_id_from=333.337.search-card.all.click&vd_source=87f333e21626c3c3bbbb43b6711d2d81)
 ## Compulsory Settings
-When install kubuntu, do not select downloading updates or 3rd party libraries. It installed openmpi but is not the write one for Nek. Nek wont compile with it.
+When install kubuntu, do not select downloading updates or 3rd party libraries. It installed openmpi but is not the write one for Nek. Nek wont compile with it. Never use sudo apt autoremove. This is stupid and will remove important libraries.
 ### Time
 > Windows sees BIOS time (REAL-TIME-CLOCK RTC) as local time, Linux sees BIOS time as UTC.
 ```
