@@ -16,9 +16,9 @@ Defaults  timestamp_timeout = 120
 ### Input Method
 > FCITX (Flexible Input Method Framework for Chinese and Various Languages) is an open-source input method framework primarily used in Linux-based operating systems.
 ```
-sudo apt install fcitix
-sudo apt install fcitix-googlepinyin
-Applications > Input Method > activate fcitix
+sudo apt install fcitx
+sudo apt install fcitx-googlepinyin
+Applications > Input Method > activate fcitx
 reboot
 fcitix configtools (checking googlepinyin, do miscellaneous settings)
 ```
