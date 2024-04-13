@@ -344,3 +344,10 @@ sudo apt install xserver-xorg-input-all
 
 ```
 解决方法：加密P方向的element numnber
+### 添加atzlinux “”铜豌豆linux”的keyring和源后运行apt update会覆盖原生ubuntu系统更名为atzlinux并尝试修改grub导致windows无法启动
+临时解决方案, 使用boot-repair修复系统grub, sudo apt reinstall base-files 修复原生系统
+```
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair && boot-repair
+```
