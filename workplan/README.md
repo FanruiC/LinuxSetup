@@ -221,5 +221,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 - [x] Reorganize the desktop and import data from the old laptop
 - [ ] Summarize learing progress and organize study materials
 - [x] Finalise house moving stuff- change address, documentations.
-
+## 18 Apr 24
+- Time-dalayed-feedback fortran programming finished in the form of a fortran module.
+- Start reseaching on Mesh Independence in CFD. Refer to video by [Cillian Thomas](https://www.youtube.com/watch?v=Bzr35PLVupA&t=459s) on GRID CONVERGENCE INDEX METHOD by JFE- Journal of Fluids Engineering Editorial Policy Statement on the Control of Numerical Accuracy
+- [ ] Try GCI method on Nek.
  
