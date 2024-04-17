@@ -225,4 +225,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 - Time-dalayed-feedback fortran programming finished in the form of a fortran module.
 - Start reseaching on Mesh Independence in CFD. Refer to video by [Cillian Thomas](https://www.youtube.com/watch?v=Bzr35PLVupA&t=459s) on GRID CONVERGENCE INDEX METHOD by JFE- Journal of Fluids Engineering Editorial Policy Statement on the Control of Numerical Accuracy
 - [ ] Try GCI method on Nek.
-- [ ] Re-set-up Setonix. 
+- [ ] Re-set-up Setonix.
+- [ ] paraview systemetic study
+- [ ] visit study?
+- [ ] gnuplot sytemetic study
+> These are visualisation method study, which is very important as it is an way of communication
