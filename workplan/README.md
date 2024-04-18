@@ -236,6 +236,9 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
   - module avial
   - host name
   - ssh -X -C setonix
+  - scontrol(hold) / scontrol(release)
+  - show job !this is the subcommand of scontrol
+  - 
   > $MYSCRATCH $MYSOFTWARE $PAWSEY_PROJECT
   
 - Try vscode on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
