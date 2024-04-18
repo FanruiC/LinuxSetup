@@ -241,6 +241,6 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 - Try vscode on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
   > Avoid using vscode for ssh setonix cause potential issues [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
 - Three pawsey programming envs: 
-$ module swap PrgEnv-gnu PrgEnv-aocc
-$ module swap PrgEng-aocc PrgEnv-cray
-$ module swap PrgEnv-cray PrgEnv-gnu 
+  $ module swap PrgEnv-gnu PrgEnv-aocc
+  $ module swap PrgEng-aocc PrgEnv-cray
+  $ module swap PrgEnv-cray PrgEnv-gnu 
