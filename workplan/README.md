@@ -232,10 +232,11 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 > These are visualisation method study, which is very important as it is an way of communication
 - Pawsey Setonix Tricks
   - sacct: show details of past jobs.
-  - The standard output and error streams are redirected to a file named slurm-<jobID>.out
+  - > The standard output and error streams are redirected to a file named slurm-<jobID>.out
   - module avial
   - host name
   - ssh -X -C setonix
+  - 
 - Try vscode on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
   > Avoid using vscode for ssh setonix cause potential issues [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
 
