@@ -262,4 +262,6 @@ module swap PrgEnv-cray PrgEnv-gnu
 module load lammps/20210929.3
  
 srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
-``` 
+```
+## 19 Apr 24
+- [ ] Build TDF module to add check converging function
