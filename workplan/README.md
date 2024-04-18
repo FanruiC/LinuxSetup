@@ -245,8 +245,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
   $ module swap PrgEng-aocc PrgEnv-cray  
   $ module swap PrgEnv-cray PrgEnv-gnu
 - Setonix Slurm Scripts Examples:
-- ```
-  #!/bin/bash -l
+```
+#!/bin/bash -l
 #SBATCH --account=<project>
 #SBATCH --partition=work
 #SBATCH --time=24:00:00
@@ -257,4 +257,4 @@ module swap PrgEnv-cray PrgEnv-gnu
 module load lammps/20210929.3
  
 srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
-  ``` 
+``` 
