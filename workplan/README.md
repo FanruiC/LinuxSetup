@@ -238,7 +238,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
   - ssh -X -C setonix
   - scontrol(hold) / scontrol(release)
   - scontrol show job JOBID !this is the subcommand of scontrol
-  - [] recursive run on Setonix? [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925946/Example+Workflows)
+  - [ ] recursive run on Setonix? [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925946/Example+Workflows)
+  - [ ] python developing on Setonix? [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925944/Developing+with+Python)
   > $MYSCRATCH $MYSOFTWARE $PAWSEY_PROJECT
   
 - Try vscode on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
