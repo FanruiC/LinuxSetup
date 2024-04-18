@@ -243,4 +243,18 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
 - Three pawsey programming envs:   
   $ module swap PrgEnv-gnu PrgEnv-aocc  
   $ module swap PrgEng-aocc PrgEnv-cray  
-  $ module swap PrgEnv-cray PrgEnv-gnu   
+  $ module swap PrgEnv-cray PrgEnv-gnu
+- Setonix Slurm Scripts Examples:
+- ```
+  #!/bin/bash -l
+#SBATCH --account=<project>
+#SBATCH --partition=work
+#SBATCH --time=24:00:00
+#SBATCH --nodes=2
+#SBATCH --job-name=lammps-job
+ 
+module swap PrgEnv-cray PrgEnv-gnu
+module load lammps/20210929.3
+ 
+srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
+  ``` 
