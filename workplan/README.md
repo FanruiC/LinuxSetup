@@ -237,8 +237,8 @@ Tests on a smaller non-linear system: two duffing oscillators coupled via a line
   - host name
   - ssh -X -C setonix
   - scontrol(hold) / scontrol(release)
-  - show job !this is the subcommand of scontrol
-  - 
+  - scontrol show job JOBID !this is the subcommand of scontrol
+  - [] recursive run on Setonix? [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925946/Example+Workflows)
   > $MYSCRATCH $MYSOFTWARE $PAWSEY_PROJECT
   
 - Try vscode on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51931360/Visual+Studio+Code+for+Remote+Development)
