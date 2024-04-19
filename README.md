@@ -351,3 +351,14 @@ sudo add-apt-repository ppa:yannubuntu/boot-repair
 sudo apt-get update
 sudo apt-get install -y boot-repair && boot-repair
 ```
+### vscode : fortls wont launch
+```
+[ERROR - 13:59:57] [lsp.client] Unable to launch LS to check version:
+[ERROR - 13:59:57] spawnSync /home/fanrui/.local/bin EACCES
+Error: spawnSync /home/fanrui/.local/bin EACCES
+	at Object.spawnSync (node:internal/child_process:1117:20)
+	at spawnSync (node:child_process:914:24)
+	at n.FortlsClient.getLSVersion (/home/fanrui/.vscode/extensions/fortran-lang.linter-gfortran-3.4.2024041503/dist/extension.js:1:67693)
+	at n.FortlsClient.didOpenTextDocument (/home/fanrui/.vscode/extensions/fortran-lang.linter-gfortran-3.4.2024041503/dist/extension.js:1:64493)
+```
+解决办法：
