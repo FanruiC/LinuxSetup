@@ -266,3 +266,4 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
 ## 19 Apr 24
 - [ ] Build TDF module to add check converging function
 - [ ] Function of Checking residual in DNS
+- [x] Profiling using gprof on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925992/Profiling+with+gprof)
