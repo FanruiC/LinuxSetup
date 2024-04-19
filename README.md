@@ -361,4 +361,4 @@ Error: spawnSync /home/fanrui/.local/bin EACCES
 	at n.FortlsClient.getLSVersion (/home/fanrui/.vscode/extensions/fortran-lang.linter-gfortran-3.4.2024041503/dist/extension.js:1:67693)
 	at n.FortlsClient.didOpenTextDocument (/home/fanrui/.vscode/extensions/fortran-lang.linter-gfortran-3.4.2024041503/dist/extension.js:1:64493)
 ```
-解决办法：
+临时解决办法：在modern fortran设置中指定 /home/fanrui/..../fortls 二进制文件explicitly 来绕过vscode检查不到PATH中的fortls的情况。
