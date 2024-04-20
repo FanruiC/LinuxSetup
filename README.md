@@ -255,7 +255,10 @@ Setting up fortls in vscode.
       ]
 }
 ```
-2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.      
+2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.
+```
+gfortran -v -E -xc /dev/null ! Can be used to see what dirs gfotran will search include files.
+```     
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
