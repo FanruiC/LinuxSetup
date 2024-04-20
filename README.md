@@ -207,10 +207,10 @@ vscode's modern fortran extension provides two debuger ways: released vs pre-rel
       "name": "(gdb) fortran",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/a.out",
+      "program": "${fileDirname}/a.out",
       "args": [], // Possible input args for a.out
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
+      "cwd": "${fileDirname}",
       "environment": [],
       "externalConsole": false,
       "MIMode": "gdb",
@@ -235,7 +235,7 @@ vscode's modern fortran extension provides two debuger ways: released vs pre-rel
             {
                   "label": "gfortran_build",
                   "type": "shell",
-                  "command": "gfortran ${file} -lslatec -llapack -g"
+                  "command": "gfortran ${file} -o ${fileDirname}/a.out -lslatec -llapack -g"
             }
       ]
 }
