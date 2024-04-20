@@ -242,6 +242,20 @@ vscode's modern fortran extension provides two debuger ways: released vs pre-rel
 ```
 For pre-release version: there is a button at the top right which can compile and run the code using its "default build command" (Have not idea how to change this setting), which wouldn't work
 to compile with slatec and lapack.
+
+Setting up fortls in vscode.
+1. Setting fortls configure file .fortls.json in the same dir of workspace, including source file location
+```
+{
+      "source_dirs": [
+            "/home/fanrui/Nek5000/slatec4linux/**",
+            "/home/fanrui/Nek5000/core/**",
+            "/home/fanrui/Nek5000/3rd_party/**",
+            "./**"
+      ]
+}
+```
+2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.      
 ## Issues Fix
 ### GPU 525 driver not getting information from sensors
 Solved by [modified nvidia-msi](https://www.reddit.com/r/kde/comments/zszj00/problem_gpu_sensor_in_kde_system_monitor_is_not/)
