@@ -244,7 +244,7 @@ For pre-release version: there is a button at the top right which can compile an
 to compile with slatec and lapack.
 
 Setting up fortls in vscode.
-1. Setting fortls configure file .fortls.json in the same dir of workspace, including source file location
+1. Setting fortls configure file .fortls.json in the same dir of workspace, including source file location. This can also be set in fortls extension settings (easier).
 ```
 {
       "source_dirs": [
@@ -255,7 +255,11 @@ Setting up fortls in vscode.
       ]
 }
 ```
-2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.
+2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.(WARNING: THIS IS CURRENT NOT WORKING, A BUG OF VSCODE??)
+   WARNING: MODERN FORTRAN LINTING COMPILER SETTINGS HAS AN INCLCUDE SETTING, BUT CURRENTLY NOT WORKING FOR "INLCUDE" STATEMENT IN FORTRAN SCRIPTS. SOMEONE MENTIONED THAT THIS ONLY WORKS FOR .MOD FILES [HERE](https://fortran-lang.discourse.group/t/modern-fortran-on-vscode-fails-to-recognize-external-includes/5600/5)
+
+> A workaround: put all files that will be included in the same dir as the workspace dir.
+
 ```
 gfortran -v -E -xc /dev/null ! Can be used to see what dirs gfotran will search include files.
 
