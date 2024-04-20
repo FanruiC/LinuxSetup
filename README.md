@@ -258,15 +258,13 @@ Setting up fortls in vscode.
 2. Setting gfortran compiler and linking searching dir where gfortran can find files where the "inlcude" statement in fortran script.(WARNING: THIS IS CURRENT NOT WORKING, A BUG OF VSCODE??)
    WARNING: MODERN FORTRAN LINTING COMPILER SETTINGS HAS AN INCLCUDE SETTING, BUT CURRENTLY NOT WORKING FOR "INLCUDE" STATEMENT IN FORTRAN SCRIPTS. SOMEONE MENTIONED THAT THIS ONLY WORKS FOR .MOD FILES [HERE](https://fortran-lang.discourse.group/t/modern-fortran-on-vscode-fails-to-recognize-external-includes/5600/5)
 
-> A workaround (THIS WORK VERY BAD AS WELL, NEED TO CLICK ON EVERY FILE AT THE FIRST, THEN THE FILE OPENED MUST BE IN THE SAME DIR AS WORKDIR, VERY STUDID BUG): put all files that will be included in the same dir as the workspace dir.
+> A workaround (THIS WORK VERY BAD AS WELL, NEED TO CLICK ON EVERY FILE AT THE FIRST, THEN THE FILE OPENED MUST BE IN THE SAME DIR AS WORKDIR, VERY STUDID BUG): put all files that will be included in the same dir as the workspace dir.Need to set file languages for like "MASS" Nek files to fortran77 one by one manually. So that by this way vscode know its fortran and fortls will tell it is fortran.
 
 ```
 gfortran -v -E -xc /dev/null ! Can be used to see what dirs gfotran will search include files.
 
 gfotran -I ./ ! Can be used to add the current dir to the searching dirs for include files.
 ```
-
-3. Need to set file languages for like "MASS" Nek files to fortran77 one by one manually. So that by this way vscode know its fortran and fortls will tell it is fortran.
 
 VSCODE Predefined variables
 ```
