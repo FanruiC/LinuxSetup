@@ -282,3 +282,4 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
       Ke = Ke/2.D0
 ```
 are used to calculate the total kenetic energy of the entire fluid domain. BM1 is the mass matrix, which could be considered as the  mass of the controled volume nearby a certain gll point. if pho is constant, then mass matrix can be seen as the controlled volumes of a certain gll point.
+- [ ] Review energy flow in CFD. 重新理解energy守恒在CFD中
