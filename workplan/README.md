@@ -271,3 +271,5 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
 - [ ] Learn some Error analysis in data science for checking stable flow or not
 - [ ] Learn 数值分析！
 - [ ] What is erro norm? In nek it's normvc() subroutine
+## 21 Apr 24
+- [ ] Talking with Justing on normvc subroutine of Nek: BM1, semi, H1, L2 norms
