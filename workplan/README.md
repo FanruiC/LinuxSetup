@@ -267,6 +267,7 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
 - [ ] Build TDF module to add check converging function
 - [ ] Function of Checking residual in DNS
 - [x] Profiling using gprof on setonix [here](https://pawsey.atlassian.net/wiki/spaces/US/pages/51925992/Profiling+with+gprof)
+      
       add -pg in makenek fflags, then run the code, then run: gprof nek5000 gmon.out > nek5000.txt
 ## 20 Apr 24
 - [ ] Learn some Error analysis in data science for checking stable flow or not
