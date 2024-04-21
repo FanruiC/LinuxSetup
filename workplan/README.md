@@ -275,3 +275,10 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
 - [ ] What is erro norm? In nek it's normvc() subroutine
 ## 21 Apr 24
 - [ ] Talking with Justing on normvc subroutine of Nek: BM1, semi, H1, L2 norms
+```
+      KE = glsc3(vx, vx, bm1, lx1*ly1*lz1*nelv) + 
+     $ glsc3(vy, vy, bm1, lx1*ly1*lz1*nelv) +
+     $ glsc3(vz, vz, bm1, lx1*ly1*lz1*nelv)
+      Ke = Ke/2.D0
+```
+are used to calculate the total kenetic energy of the entire fluid domain. BM1 is the mass matrix, which could be considered as the  mass of the controled volume nearby a certain gll point. if pho is constant, then mass matrix can be seen as the controlled volumes of a certain gll point.
