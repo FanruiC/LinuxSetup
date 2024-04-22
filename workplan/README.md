@@ -283,3 +283,30 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
 ```
 are used to calculate the total kenetic energy of the entire fluid domain. BM1 is the mass matrix, which could be considered as the  mass of the controled volume nearby a certain gll point. if pho is constant, then mass matrix can be seen as the controlled volumes of a certain gll point.
 - [ ] Review energy flow in CFD. 重新理解energy守恒在CFD中
+## 22 Apr 24
+Justin meeting notes: fft on reci.his to determine the minimam freq needed to resolve every feature. Using spyder history:
+```
+import numpy as np
+import matplotlib.pyplot as plt
+data = np.loadtxt('temp.dat','r')
+data = np.loadtxt('temp.dat')
+F = np.fft.fft(data[:,1])
+freq = np.linspace(0,1/(data[0,1]-data[1,1]),np.size(data)[0])
+np.size(data)
+freq = np.linspace(0,1/(data[0,1]-data[1,1]),np.shape(data)[0])
+plt.semilogy(freq,np.abs(F))
+freq = np.linspace(0,1/(data[1,1]-data[0,1]),np.shape(data)[0])
+plt.semilogy(freq,np.abs(F))
+freq = np.linspace(0,1/(data[1,0]-data[0,0]),np.shape(data)[0])
+plt.semilogy(freq,np.abs(F))
+plt.semilogy(freq,np.abs(F)/np.max(np.abs(F)))
+F = np.fft.fft(data[:,1]-np.mean(data[:,1])
+)
+plt.semilogy(freq,np.abs(F)/np.max(np.abs(F)))
+import scipy
+w = scipy.signal.tukey(np.shape(data)[0], 0.1)
+F = np.fft.fft((data[:,1]-np.mean(data[:,1]))*w)
+plt.semilogy(freq,np.abs(F)/np.max(np.abs(F)))
+plt.plot(data[:,0], data[:,1])
+plt.plot(data[:100,0], data[:100,1])
+```
