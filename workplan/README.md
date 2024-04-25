@@ -271,7 +271,7 @@ srun --export=all -n 48 lmp_mpi -in lammps.inp -log lammps.log
       add -pg in makenek fflags, then run the code, then run: gprof nek5000 gmon.out > nek5000.txt
 ## 20 Apr 24
 - [ ] Learn some Error analysis in data science for checking stable flow or not
-- [ ] Learn 数值分析！
+- [ ] Learn 数值分析！，包括数值积分，数值微分，数值离散，离散数学，各种数值解法
 - [ ] What is erro norm? In nek it's normvc() subroutine
 ## 21 Apr 24
 - [ ] Talking with Justing on normvc subroutine of Nek: BM1, semi, H1, L2 norms
@@ -312,6 +312,7 @@ plt.plot(data[:100,0], data[:100,1])
 ```
 ## 25 Apr 24
 - [ ] Feyman Torque, angular momentum
+> 圆周运动加速度怎么推导？思路非常重要。1.如果
 - [ ] Tensor Computation in Fluid Mechanics
 - [ ] Energy dissipation rate
 - [ ] Kolmogorov Scales
