@@ -310,3 +310,8 @@ plt.semilogy(freq,np.abs(F)/np.max(np.abs(F)))
 plt.plot(data[:,0], data[:,1])
 plt.plot(data[:100,0], data[:100,1])
 ```
+## 25 Apr 24
+- [ ] Feyman Torque, angular momentum
+- [ ] Tensor Computation in Fluid Mechanics
+- [ ] Energy dissipation rate
+- [ ] Kolmogorov Scales
