@@ -327,9 +327,9 @@ $\delta y = +x \delta \theta $
 
 即 横坐标位置越远，纵坐标瞬时变化越大； 纵坐标位置越远，横坐标瞬时变化越大。两边各自除以时间的微分 $\delta t$ 得到线速度和角速度之间的关系：
 
-$ vx = -y \omega $
+$vx = -y \omega$
 
-$ vy = +x \omega $
+$vy = +x \omega$
 
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
 
