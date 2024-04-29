@@ -333,8 +333,8 @@ $vy = +x \omega$
 
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
 
-在某瞬时， 质点如果受力可以分解为Fx， Fy，那么微小时间段内，力所做的功为：
-$W = Fx * \delta x + Fy * \delta y$
+在某瞬时， 质点如果受力可以分解为Fx， Fy，那么微小时间段内，力所做的功为：  
+$W = Fx * \delta x + Fy * \delta y$  
 如果我们在角位移，角速度的，转动的视角下审视问题，并
 
 
