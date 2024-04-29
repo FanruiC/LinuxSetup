@@ -320,10 +320,10 @@ plt.plot(data[:100,0], data[:100,1])
 1. 质心本质是一个位置向量，是以刚体上各个质点位置为向量和，质点质量为权重的加权平均。
 > 我们将在以后的章节中更详细地讨论这个重要的定理，因此我们将限制我们的评论在两个方面：首先，如果外力为零，如果物体在空旷的空间中漂浮，它可能会旋转、摆动、扭曲，以及做各种各样的事情。但质心，这个人为发明的、计算出的位置，在中间的某个地方，将以恒定的速度移动。特别是，如果它最初处于静止状态，它将保持静止。因此，如果我们有某种盒子，也许是一艘宇宙飞船，里面有人，我们计算质心的位置，并发现它静止不动，那么如果盒子上没有外力作用，质心将继续保持静止。当然，宇宙飞船可能在空间中稍微移动，但那是因为人们在里面来回走动；当一个人向前走时，飞船向后移动，以便保持所有质量的平均位置恰好在同一个地方。
 2. 二维空间中，某瞬时时刻，某绕某轴（曲率中心），旋转的质点P，  displacement position 位置（x,y），angular position ($\theta$);  速度（vx, vy) 角速度 $\omega$ 。displacement 和 angular movement之间有什么关系呢？线位置的微分 $\delta x$ , $\delta y$ 和 角位置的微分 $\delta \theta$ 有如下关系：
-$
-\delta x = -y \detla \theta
-\delta y = +x \delta \theta
-$
+
+$\delta x = -y \detla \theta$
+$\delta y = +x \delta \theta$
+
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
 
 
