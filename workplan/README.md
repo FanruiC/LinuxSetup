@@ -324,6 +324,7 @@ plt.plot(data[:100,0], data[:100,1])
 $\delta x = -y \delta \theta $
 
 $\delta y = +x \delta \theta $
+
 即 横坐标位置越远，纵坐标瞬时变化越大； 纵坐标位置越远，横坐标瞬时变化越大。
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
 
