@@ -357,7 +357,7 @@ $W = (x Fy-y Fx) * \delta \theta$
 > $F_y = \frac{d(mv_y)}{dt} $  
 > 力用来衡量动量的变化率
 > 那扭矩用来衡量什么的变化率呢？假设这个未知东西用 L 表示  
-> $xF_y - yF_x = \frac{L}{dt}$
+> $xF_y - yF_x = \frac{L}{dt}$； 下面找到这个L  
 > 
 
 
