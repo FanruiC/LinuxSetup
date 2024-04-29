@@ -345,6 +345,9 @@ $W = (x Fy-y Fx) * \delta \theta$
 > $\Delta W = \tau_{total}\Delta\theta$
 >
 > 只有当合力矩也为零时，刚体才不会转动加速/减速产生功。从而能量守恒，达到平衡状态。
+4. 一切都是从**质点**在**某一瞬间，绕曲率半径R**转动时候受力做功开始推导起的。首先最直观，功 = Fx*dx + Fy*dy,然后通过dx，dy和 d角度的关系，得到角度下的功关系式并定义扭矩：功 = (xFy - yFx) * 角度位移，再然后，通过作图发现只有切向力会产生功，因此：功 = Ft * R*角度位移；那么自然而然： 扭矩 = Ft * R = F*sin(a)*R， 其中a是力和P点位置矢量的夹角。 因此扭矩还有第三种公式：把sin(a)给R来计算分量，得到 扭矩 = F * (R *sin(a)) 叫做 THE LEVER ARM OF THE FORCE. TORQUE IS ALSO CALLED THE MOMENT OF FORCE.
+5. 角动量 ANGULAR MOMENTUM
+
 
 
 
