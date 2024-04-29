@@ -338,7 +338,7 @@ $W = Fx * \delta x + Fy * \delta y$
 如果我们在角位移，角速度的，转动的视角下审视问题:   
 $W = Fx * (-y*\delta \theta) + Fy * (x*\delta \theta)$
 
-$W = (x*Fy - y*Fx) * \delta\theta$
+$W = (x*Fy - y*Fx) * \delta \theta$
 
 
 
