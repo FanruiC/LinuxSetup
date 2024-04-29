@@ -330,6 +330,7 @@ $\delta y = +x \delta \theta $
 $ vx = -y \omega $
 
 $ vy = +x \omega $
+
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
 
 
