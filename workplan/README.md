@@ -322,6 +322,7 @@ plt.plot(data[:100,0], data[:100,1])
 2. 二维空间中，某瞬时时刻，某绕某轴（曲率中心），旋转的质点P，  displacement position 位置（x,y），angular position ($\theta$);  速度（vx, vy) 角速度 $\omega$ 。displacement 和 angular movement之间有什么关系呢？线位置的微分 $\delta x$ , $\delta y$ 和 角位置的微分 $\delta \theta$ 有如下关系：
 
 $\delta x = -y \detla \theta$
+
 $\delta y = +x \delta \theta$
 
 > In order to study rotation, we observe the angle through which a body has turned. Of course, we are not referring to any particular angle inside the object itself; it is not that we draw some angle on the object. We are talking about the angular change of the position of the whole thing, from one time to another.
