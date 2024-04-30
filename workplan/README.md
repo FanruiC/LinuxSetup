@@ -371,4 +371,16 @@ $W = (x Fy-y Fx) * \delta \theta$
 一团粒子（刚体）绕轴匀速圆周旋转下，可以是粒子团内部轴，也可以是同时绕粒子团外部转轴。其每个粒子质点速度为v，旋转半径为r，v与r时刻保持垂直。那么角动量 L = r * (mv) = (mr^2) * w。  
 类比质量，我们把mr^2称作转动惯量，所以 L = Iw, 扭矩 = I dw/dt，即 扭矩 = 转动惯量x角加速度。 可以看出，转动惯量I用来衡量刚体倾向于保持当前旋转状态的“惯性”（旋转状态包括方向和大小） 
 
+7. 再论COM
+> In the previous chapter we found that if a great many forces are acting on a complicated mass of particles, whether the particles comprise a rigid or a nonrigid body, or a cloud of stars, or anything else, and we find the sum of all the forces (that is, of course, the external forces, because the internal forces balance out), then if we consider the body as a whole, and say it has a total mass M
+, there is a certain point “inside” the body, called the center of mass, such that the net resulting external force produces an acceleration of this point, just as though the whole mass were concentrated there.
 
+> 质心运动定理非常有趣，并在我们对物理学的理解发展中起着重要作用。假设我们假设牛顿定律对一个更大物体的小组成部分是正确的。那么这个定理表明，即使我们不研究物体的细节，而只研究作用在它上面的总力和它的质量，牛顿定律对于更大的物体也是正确的。换句话说，牛顿定律具有特殊的属性，即如果它在某个小尺度上是正确的，那么它在更大尺度上也将是正确的。如果我们不把棒球看作是一个由无数相互作用的粒子组成的非常复杂的物体，而只研究质心的运动和作用在球上的外力，我们发现 F=ma，其中 F 是作用在棒球上的外力，m 是它的质量，a 是它的质心的加速度。因此，F=ma 是一个在更大尺度上复制自身的法则。（应该有一个好的词，可能是希腊词，来描述一个在更大尺度上复制相同法则的法则。）当然，人类最初发现的定律可能是那些在更大尺度上复制自身的定律。为什么呢？因为宇宙的基本齿轮和轮子的实际尺度是原子尺度，比我们的观察精度要细得多，以至于在我们的普通观察中，我们根本就不接近这个尺度。因此，我们最初发现的东西必须对相对于原子尺度没有特殊大小的物体成立。如果小粒子的定律不能在更大尺度上复制自身，我们就不会轻易发现这些定律。那么反过来呢？小尺度上的定律必须与大尺度上的定律相同吗？在自然界当然不一定如此，在原子水平上的定律不必与大尺度上的定律相同。
+
+8. 穿过质心的轴
+> 如果在一个非惯性系，如地表，加速度为a的飞船，或旋转的看不到的盒子中。则粒子团会受到惯性力。 那么，什么时候这个惯性力不会产生扭矩贡献呢？ 答： 当旋转轴穿过质心时候！！
+
+> 在一个不加速的惯性参考系中，扭矩总是等于角动量的变化率。然而，在通过物体质心的轴线周围，即使物体正在加速，扭矩仍然等于角动量的变化率。即使质心正在加速，我们仍然可以选择一个特殊的轴，即通过质心的轴，这样扭矩仍然等于绕该轴的角动量的变化率。因此，关于扭矩等于角动量变化率的定理在两种一般情况下是成立的：(1) 惯性空间中的固定轴，(2) 通过质心的轴，即使物体可能正在加速。
+
+9. 质心的计算：数学范畴，略，微积分运算。重点是计算： $\sum m_i\mathbf{r_i}$
+10. 转动惯量的计算, 重点是计算： $\sum m_i r_i^2$
