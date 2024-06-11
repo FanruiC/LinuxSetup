@@ -409,3 +409,4 @@ KE_rotation = 1/2 * I * w^2 = 1/2 * (Iw) * w = 1/2 * L * w
 - 用于快速搜索文本
 - bulk flow rate param(54) 和 param(55) 用于搭配P边条. userbc不用设置任何项目. 见Nek document hillp tutorial.
 - rst坐标系上的标量梯度是具体转换到全局坐标系的? "subroutine gradm1" in navier5.f
+- 压降(J/m^3)和viscous dissipation rate(J/m^3/s)
