@@ -404,7 +404,8 @@ KE_rotation = 1/2 * I * w^2 = 1/2 * (Iw) * w = 1/2 * L * w
 5. 一塌糊涂，关键是涉及旋转坐标系，惯性系和非惯性系变换，完全不理解，各个渠道知识完全混淆，可能需要重头看一本好的教科书。
 ## 06 May 24
 - 在2D已知速度场，和压力场。用Nek复现流动与已知解析解对比的实验中，v可以吻合良好（在粘度高时），但是P总是差一些。不知是何原因，case 名字叫做artificial。
-## 11 Jun 24
+## 11 Jun 24 Tue
 > find ./ -type f -name '*.usr' -exec grep -ni 'xxxx' {} +
 - 用于快速搜索文本
 - bulk flow rate param(54) 和 param(55) 用于搭配P边条. userbc不用设置任何项目. 见Nek document hillp tutorial.
+- rst坐标系上的标量梯度是具体转换到全局坐标系的? "subroutine gradm1" in navier5.f
