@@ -407,3 +407,4 @@ KE_rotation = 1/2 * I * w^2 = 1/2 * (Iw) * w = 1/2 * L * w
 ## 11 Jun 24
 > find ./ -type f -name '*.usr' -exec grep -ni 'xxxx' {} +
 - 用于快速搜索文本
+- bulk flow rate param(54) 和 param(55) 用于搭配P边条. userbc不用设置任何项目. 见Nek document hillp tutorial.
