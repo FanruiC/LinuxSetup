@@ -405,8 +405,20 @@ KE_rotation = 1/2 * I * w^2 = 1/2 * (Iw) * w = 1/2 * L * w
 ## 06 May 24
 - 在2D已知速度场，和压力场。用Nek复现流动与已知解析解对比的实验中，v可以吻合良好（在粘度高时），但是P总是差一些。不知是何原因，case 名字叫做artificial。
 ## 11 Jun 24 Tue
-> find ./ -type f -name '*.usr' -exec grep -ni 'xxxx' {} +
-- 用于快速搜索文本
+- find ./ -type f -name '*.usr' -exec grep -ni 'xxxx' {} + 用于快速搜索文本
 - bulk flow rate param(54) 和 param(55) 用于搭配P边条. userbc不用设置任何项目. 见Nek document hillp tutorial.
 - rst坐标系上的标量梯度是具体转换到全局坐标系的? "subroutine gradm1" in navier5.f
 - 压降(J/m^3)和viscous dissipation rate(J/m^3/s)
+## 13 Jun 24 Thu
+- [ ]复习反三角函数作图fortran中atan2(y,x)的使用
+- [ ]开发一种可以用于分析往复运动 .his 文件的python程序，做到以下内容：运行python 程序后（建议通过设置到anaconda python3可执行程序的shebang来命令行运行命令）
+  - 输入一个文件名，分析速度场和压力场的收敛情况，如何判断收敛？
+    1. 开头：说明是计算周期轨道才可以使用。
+    2. 输入：文件名的相对路径。
+    3. 询问2D or 3D ？
+    4. 标准输出：探测点的数量，模拟周期数目。sample时间间隔，sample频率多少次dump每周期。含有的数据类型（UPT）
+    5. 每组相减。然后文件第一列时间改成周期迭代次数,求abs(迭代误差),按原格式输出到文件,台头把标准输出写进去, 文件名为 xxx.residual.
+## 15 Jun 24 Sat
+- [ ]开发一种自动创建jobfile的程序.
+- [ ]开发一种自动copy nekfolder的程序,但避免所有中间含有0.f的文件
+- [ ]创建一个repository,名为Nekusrtools,把bash或python脚本都放入.
