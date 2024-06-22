@@ -422,3 +422,5 @@ KE_rotation = 1/2 * I * w^2 = 1/2 * (Iw) * w = 1/2 * L * w
 - [x]开发一种自动copy nekfolder的程序,但避免所有中间含有0.f的文件
 - [x]创建一个repository,名为Nekusrtools,把bash或python脚本都放入.
 ## 16 Jun 24 Sun
+## 23 Jun 24 Sun
+- [x] 开发了nekcheck 用于reciprocating flow only
